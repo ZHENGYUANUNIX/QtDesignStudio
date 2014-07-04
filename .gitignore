@@ -1,0 +1,52 @@
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
+
+*~
+*.autosave
+*.core
+*.orig
+*.rej
+.#*
+*.*#
+tags
+.DS_Store
+*.debug
+Makefile*
+Thumbs.db
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+*.qbs.user*
+
+# xemacs temporary files
+*.flc
+
+# Vim temporary files
+.*.swp
+
+# Visual Studio generated files
+*.ib_pdb_index
+*.sln
+*.suo
+*.vcproj
+*vcproj.*.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.vcxproj
+*.vcxproj.*
+
+# MinGW generated files
+*.Debug
+*.Release
+
+# Directories to ignore
+# ---------------------
+
+debug/
+release/
+/*-debug/
+/*-release/
+tmp/
