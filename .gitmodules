@@ -16,8 +16,8 @@
 	branch = master
 [submodule "qt-creator"]
 	path = qt-creator
-	url = ../../QtRD-15810/qtcreator.git
-	branch = upstream-master
+	url = git://gitorious.org/qt-creator/qt-creator.git
+	branch = master
 [submodule "qtsdk-enterprise"]
 	path = qtsdk-enterprise
 	url = ../../QtRD-15810/qtsdk-enterprise.git
