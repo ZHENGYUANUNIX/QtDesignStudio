@@ -22,3 +22,5 @@ qtquickdesignerextension.depends = qtcreator licensechecker
 
 b2qt.file = b2qt-qtcreator-plugin/boot2qt.pro
 b2qt.depends = qtcreator licensechecker
+
+OTHER_FILES += .qmake.conf
