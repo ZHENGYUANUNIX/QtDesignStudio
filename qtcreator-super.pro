@@ -1,5 +1,9 @@
 TEMPLATE = subdirs
 
+!contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked) {
+    error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
+}
+
 SUBDIRS = \
     qtcreator \
     licensechecker \
@@ -22,3 +26,5 @@ qtquickdesignerextension.depends = qtcreator licensechecker
 
 b2qt.file = b2qt-qtcreator-plugin/boot2qt.pro
 b2qt.depends = qtcreator licensechecker
+
+OTHER_FILES += .qmake.conf
