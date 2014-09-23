@@ -8,7 +8,7 @@ SUBDIRS = \
     qtcreator \
     licensechecker \
     qmlprofilerextension \
-    qtquickdesignerextension \
+    qtquickdesigner \
     b2qt
 
 
@@ -21,8 +21,8 @@ licensechecker.depends = qtcreator
 qmlprofilerextension.file = qmlprofiler/qmlprofiler.pro
 qmlprofilerextension.depends = qtcreator licensechecker
 
-qtquickdesignerextension.file = qtquickdesigner/qmldesignerextension.pro
-qtquickdesignerextension.depends = qtcreator licensechecker
+qtquickdesigner.file = qtquickdesigner/qtquickdesigner.pro
+qtquickdesigner.depends = qtcreator licensechecker
 
 b2qt.file = b2qt-qtcreator-plugin/boot2qt.pro
 b2qt.depends = qtcreator licensechecker
