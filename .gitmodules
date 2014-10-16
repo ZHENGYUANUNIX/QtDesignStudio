@@ -10,6 +10,10 @@
 	path = qtquickdesigner
 	url = ../../Comm-15470/qtquickdesigner.git
 	branch = 3.3
+[submodule "clangstaticanalyzer"]
+	path = clangstaticanalyzer
+	url = ../../Comm-15470/clangstaticanalyzer.git
+        branch = 3.3
 [submodule "b2qt-qtcreator-plugin"]
 	path = b2qt-qtcreator-plugin
 	url = ../../QtRD-15810/b2qt-qtcreator-plugin.git
