@@ -4,27 +4,25 @@ TEMPLATE = subdirs
     error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
 }
 
+mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.cache there
+
 SUBDIRS = \
     qtcreator \
     licensechecker \
-    qmlprofilerextension \
+    qmlprofiler \
     qtquickdesigner \
-    b2qt
+    b2qt \
+    clangstaticanalyzer
 
-
-qtcreator.file = qt-creator/qtcreator.pro
-mkpath($$OUT_PWD/qt-creator) # so the qtcreator.pro is able to create a .qmake.cache there
-
-licensechecker.file = licensechecker/licensechecker.pro
 licensechecker.depends = qtcreator
 
-qmlprofilerextension.file = qmlprofiler/qmlprofiler.pro
-qmlprofilerextension.depends = qtcreator licensechecker
+qmlprofiler.depends = qtcreator licensechecker
 
-qtquickdesigner.file = qtquickdesigner/qtquickdesigner.pro
 qtquickdesigner.depends = qtcreator licensechecker
 
 b2qt.file = b2qt-qtcreator-plugin/boot2qt.pro
 b2qt.depends = qtcreator licensechecker
+
+clangstaticanalyzer.depends = qtcreator licensechecker
 
 OTHER_FILES += .qmake.conf

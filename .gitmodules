@@ -19,7 +19,7 @@
 	url = ../../QtRD-15810/b2qt-qtcreator-plugin.git
 	branch = 3.3
 [submodule "qt-creator"]
-	path = qt-creator
+	path = qtcreator
 	url = git://gitorious.org/qt-creator/qt-creator.git
 	branch = 3.3
 [submodule "qtsdk-enterprise"]
