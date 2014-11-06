@@ -1,27 +1,27 @@
 [submodule "licensechecker"]
 	path = licensechecker
 	url = ../../Comm-15470/licensechecker.git
-	branch = 3.3
+	branch = master
 [submodule "qmlprofiler"]
 	path = qmlprofiler
 	url = ../../Comm-15470/qmlprofiler.git
-	branch = 3.3
+	branch = master
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
 	url = ../../Comm-15470/qtquickdesigner.git
-	branch = 3.3
+	branch = master
 [submodule "clangstaticanalyzer"]
 	path = clangstaticanalyzer
 	url = ../../Comm-15470/clangstaticanalyzer.git
-        branch = 3.3
+        branch = master
 [submodule "b2qt-qtcreator-plugin"]
 	path = b2qt-qtcreator-plugin
 	url = ../../QtRD-15810/b2qt-qtcreator-plugin.git
-	branch = 3.3
+	branch = master
 [submodule "qt-creator"]
 	path = qtcreator
 	url = git://gitorious.org/qt-creator/qt-creator.git
-	branch = 3.3
+	branch = master
 [submodule "qtsdk-enterprise"]
 	path = qtsdk-enterprise
 	url = ../../QtRD-15810/qtsdk-enterprise.git
