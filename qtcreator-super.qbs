@@ -1,0 +1,18 @@
+import qbs
+
+Project {
+    name: "Qt Creator Super Project"
+
+    qbsSearchPaths: "qtcreator/qbs"
+    property path licenseManagingDir: path + "/qtsdk-enterprise/license-managing"
+
+    SubProject {
+        filePath: "qtcreator/qtcreator.qbs"
+        Properties {
+            additionalPlugins: [
+                path + "/b2qt-qtcreator-plugin/plugins/boot2qt/boot2qt.qbs",
+                path + "/licensechecker/plugins/licensechecker/licensechecker.qbs",
+            ]
+        }
+    }
+}
