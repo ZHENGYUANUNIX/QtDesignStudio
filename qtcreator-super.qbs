@@ -11,6 +11,7 @@ Project {
         Properties {
             additionalPlugins: [
                 path + "/b2qt-qtcreator-plugin/plugins/boot2qt/boot2qt.qbs",
+                path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/clangstaticanalyzer.qbs",
                 path + "/licensechecker/plugins/licensechecker/licensechecker.qbs",
             ]
         }
