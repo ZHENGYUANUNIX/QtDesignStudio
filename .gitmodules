@@ -15,7 +15,7 @@
 	url = ../../Comm-15470/clangstaticanalyzer.git
         branch = master
 [submodule "b2qt-qtcreator-plugin"]
-	path = b2qt-qtcreator-plugin
+	path = boot2qt
 	url = ../../QtRD-15810/b2qt-qtcreator-plugin.git
 	branch = master
 [submodule "qt-creator"]

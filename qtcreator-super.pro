@@ -11,7 +11,7 @@ SUBDIRS = \
     licensechecker \
     qmlprofiler \
     qtquickdesigner \
-    b2qt \
+    boot2qt \
     clangstaticanalyzer
 
 licensechecker.depends = qtcreator
@@ -20,8 +20,7 @@ qmlprofiler.depends = qtcreator licensechecker
 
 qtquickdesigner.depends = qtcreator licensechecker
 
-b2qt.file = b2qt-qtcreator-plugin/boot2qt.pro
-b2qt.depends = qtcreator licensechecker
+boot2qt.depends = qtcreator licensechecker
 
 clangstaticanalyzer.depends = qtcreator licensechecker
 
