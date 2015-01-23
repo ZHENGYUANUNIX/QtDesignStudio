@@ -15,6 +15,9 @@ Project {
                 path + "/licensechecker/plugins/licensechecker/licensechecker.qbs",
                 path + "/qmlprofiler/plugins/qmlprofilerextension/qmlprofilerextension.qbs",
             ]
+            additionalAutotests: [
+                path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/tests/tests.qbs",
+            ]
         }
     }
 }
