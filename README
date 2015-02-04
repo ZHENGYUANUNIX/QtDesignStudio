@@ -25,7 +25,7 @@ Working:
 Work in the corresponding submodule.
 
 For Qt Creator, you must add the gerrit remote and push there:
-cd qt-creator
+cd qtcreator
 git remote add gerrit ssh://codereview.qt-project.org/qt-creator/qt-creator
 
 Do not change anything in this governing qtcreator-super repository, it is
