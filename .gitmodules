@@ -26,3 +26,7 @@
 	path = qtsdk-enterprise
 	url = ../../QtRD-15810/qtsdk-enterprise.git
         branch = master
+[submodule "vxworks-qtcreator-plugin"]
+	path = vxworks
+	url = ../../Comm-18136/vxworks-qtcreator-plugin
+	branch = master
