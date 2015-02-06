@@ -14,6 +14,7 @@ Project {
                 path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/clangstaticanalyzer.qbs",
                 path + "/licensechecker/plugins/licensechecker/licensechecker.qbs",
                 path + "/qmlprofiler/plugins/qmlprofilerextension/qmlprofilerextension.qbs",
+                path + "/vxworks/plugins/vxworks/vxworks.qbs",
             ]
             additionalAutotests: [
                 path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/tests/tests.qbs",
