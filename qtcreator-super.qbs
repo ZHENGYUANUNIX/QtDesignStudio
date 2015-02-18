@@ -10,6 +10,7 @@ Project {
         filePath: "qtcreator/qtcreator.qbs"
         Properties {
             additionalPlugins: [
+                path + "/autotest/plugins/autotest/autotest.qbs",
                 path + "/boot2qt/plugins/boot2qt/boot2qt.qbs",
                 path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/clangstaticanalyzer.qbs",
                 path + "/licensechecker/plugins/licensechecker/licensechecker.qbs",
