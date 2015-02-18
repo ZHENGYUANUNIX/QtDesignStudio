@@ -9,6 +9,7 @@ mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.ca
 SUBDIRS = \
     qtcreator \
     licensechecker \
+    perfprofiler \
     qmlprofiler \
     qtquickdesigner \
     boot2qt \
@@ -17,6 +18,8 @@ SUBDIRS = \
     autotest
 
 licensechecker.depends = qtcreator
+
+perfprofiler.depends = qtcreator licensechecker
 
 qmlprofiler.depends = qtcreator licensechecker
 

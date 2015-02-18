@@ -34,3 +34,7 @@
 	path = autotest
 	url = ../../QtRD-15810/autotest-qtcreator-plugin.git
 	branch = 3.4
+[submodule "perfprofiler"]
+	path = perfprofiler
+	url = ../../Comm-15470/perfprofiler.git
+	branch = 3.4
