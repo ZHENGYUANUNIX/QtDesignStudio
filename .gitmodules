@@ -30,3 +30,7 @@
 	path = vxworks
 	url = ../../Comm-18136/vxworks-qtcreator-plugin
 	branch = 3.4
+[submodule "autotest"]
+	path = autotest
+	url = ../../QtRD-15810/autotest-qtcreator-plugin.git
+	branch = 3.4

@@ -13,7 +13,8 @@ SUBDIRS = \
     qtquickdesigner \
     boot2qt \
     clangstaticanalyzer \
-    vxworks
+    vxworks \
+    autotest
 
 licensechecker.depends = qtcreator
 
@@ -26,5 +27,7 @@ boot2qt.depends = qtcreator licensechecker
 clangstaticanalyzer.depends = qtcreator licensechecker
 
 vxworks.depends = qtcreator licensechecker
+
+autotest.depends = qtcreator licensechecker
 
 OTHER_FILES += .qmake.conf
