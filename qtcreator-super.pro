@@ -25,7 +25,7 @@ qmlprofiler.depends = qtcreator licensechecker
 
 qtquickdesigner.depends = qtcreator licensechecker
 
-boot2qt.depends = qtcreator licensechecker
+boot2qt.depends = qtcreator perfprofiler licensechecker
 
 clangstaticanalyzer.depends = qtcreator licensechecker
 
