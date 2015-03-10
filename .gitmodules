@@ -20,7 +20,7 @@
 	branch = 3.3
 [submodule "qt-creator"]
 	path = qtcreator
-	url = git://gitorious.org/qt-creator/qt-creator.git
+	url = git://code.qt.io/qt-creator/qt-creator.git
 	branch = 3.3
 [submodule "qtsdk-enterprise"]
 	path = qtsdk-enterprise
