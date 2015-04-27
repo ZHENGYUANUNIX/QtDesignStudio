@@ -1,14 +1,9 @@
 TEMPLATE = subdirs
 
-!contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked) {
-    error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
-}
-
 mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.cache there
 
 SUBDIRS = \
     qtcreator \
-    licensechecker \
     perfprofiler \
     qmlprofiler \
     qtquickdesigner \
@@ -23,20 +18,47 @@ exists(gammaray-qtc-integration/gammarayintegration.pro):!isEmpty(QT.GammaRayCli
     gammaray.depends = qtcreator
 }
 
-licensechecker.depends = qtcreator
+perfprofiler.depends = qtcreator
 
-perfprofiler.depends = qtcreator licensechecker
+qmlprofiler.depends = qtcreator
 
-qmlprofiler.depends = qtcreator licensechecker
+qtquickdesigner.depends = qtcreator
 
-qtquickdesigner.depends = qtcreator licensechecker
+boot2qt.depends = qtcreator perfprofiler
 
-boot2qt.depends = qtcreator perfprofiler licensechecker
+clangstaticanalyzer.depends = qtcreator
 
-clangstaticanalyzer.depends = qtcreator licensechecker
+vxworks.depends = qtcreator
 
-vxworks.depends = qtcreator licensechecker
-
-autotest.depends = qtcreator licensechecker
+autotest.depends = qtcreator
 
 OTHER_FILES += .qmake.conf
+
+!exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
+
+!no_licensechecker {
+    !contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked): \
+        error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
+
+    SUBDIRS += licensechecker
+    licensechecker.depends = qtcreator
+    perfprofiler.depends += licensechecker
+    qmlprofiler.depends += licensechecker
+    qtquickdesigner.depends += licensechecker
+    boot2qt.depends += licensechecker
+    clangstaticanalyser.depends += licensechecker
+    vxworks.depends += licensechecker
+    autotest.depends += licensechecker
+
+    !licensechecker {
+        # make it available to sub-project files
+        CONFIG_LICENSECHECKER = licensechecker
+        cache(CONFIG, add, CONFIG_LICENSECHECKER)
+    }
+} else {
+    licensechecker {
+        # remove cached value
+        CONFIG_LICENSECHECKER = licensechecker
+        cache(CONFIG, sub, CONFIG_LICENSECHECKER)
+    }
+}
