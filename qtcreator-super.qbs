@@ -5,8 +5,9 @@ import qbs.FileInfo
 Project {
     name: "Qt Creator Super Project"
 
-    qbsSearchPaths: "qtcreator/qbs"
+    qbsSearchPaths: ["qbs_resources", "qtcreator/qbs"]
     property path licenseManagingDir: path + "/qtsdk-enterprise/license-managing"
+    property bool licenseCheckerEnabled: File.exists(licenseManagingDir)
 
     SubProject {
         filePath: "qtcreator/qtcreator.qbs"
@@ -20,8 +21,10 @@ Project {
                 candidates.forEach(function(candidate) {
                     var file = FileInfo.joinPaths(path, candidate, "plugins", candidate,
                                              candidate + ".qbs");
-                    if (File.exists(file))
+                    if (File.exists(file)
+                            && (candidate !== "licensechecker" || licenseCheckerEnabled)) {
                         plugins.push(file);
+                    }
                 });
                 return plugins;
             }
