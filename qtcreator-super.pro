@@ -46,7 +46,7 @@ OTHER_FILES += .qmake.conf
     qmlprofiler.depends += licensechecker
     qtquickdesigner.depends += licensechecker
     boot2qt.depends += licensechecker
-    clangstaticanalyser.depends += licensechecker
+    clangstaticanalyzer.depends += licensechecker
     vxworks.depends += licensechecker
     autotest.depends += licensechecker
 
