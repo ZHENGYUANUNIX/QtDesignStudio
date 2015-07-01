@@ -5,5 +5,5 @@ QtcPlugin {
         name: "LicenseChecker"
         condition: project.licenseCheckerEnabled
     }
-    cpp.defines: base.concat(project.licenseCheckerEnabled ? ["LICENSE_CHECKER"] : [])
+    cpp.defines: base.concat(project.licenseCheckerEnabled ? ["LICENSECHECKER"] : [])
 }
