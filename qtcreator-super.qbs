@@ -31,6 +31,9 @@ Project {
             additionalAutotests: [
                     path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/tests/tests.qbs",
                 ].filter(function(candidate) { return File.exists(candidate); });
+            additionalTools: [
+                path + "/perfparser/perfparser.qbs"
+            ]
         }
     }
 }

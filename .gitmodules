@@ -38,3 +38,7 @@
 	path = perfprofiler
 	url = ../../Comm-15470/perfprofiler.git
 	branch = master
+[submodule "perfparser"]
+	path = perfparser
+	url = ../../QtRD-15810/perfparser.git
+	branch = master
