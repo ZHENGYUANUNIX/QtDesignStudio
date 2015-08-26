@@ -20,10 +20,12 @@ exists(gammaray-qtc-integration/gammarayintegration.pro):!isEmpty(QT.GammaRayCli
 
 linux-g++*{
     SUBDIRS += perfparser
+    PERFPARSER_BUNDLED_ELFUTILS = true
     PERFPARSER_APP_DESTDIR = $$IDE_BUILD_TREE/libexec/qtcreator
     PERFPARSER_ELFUTILS_DESTDIR = $$IDE_BUILD_TREE/lib/qtcreator
     PERFPARSER_APP_INSTALLDIR = $$QTC_PREFIX/libexec/qtcreator
     PERFPARSER_ELFUTILS_INSTALLDIR = $$QTC_PREFIX/lib/qtcreator
+    cache(PERFPARSER_BUNDLED_ELFUTILS)
     cache(PERFPARSER_APP_DESTDIR)
     cache(PERFPARSER_ELFUTILS_DESTDIR)
     cache(PERFPARSER_APP_INSTALLDIR)
