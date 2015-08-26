@@ -18,7 +18,7 @@ exists(gammaray-qtc-integration/gammarayintegration.pro):!isEmpty(QT.GammaRayCli
     gammaray.depends = qtcreator
 }
 
-linux-*{
+linux-g++*{
     SUBDIRS += perfparser
     PERFPARSER_APP_DESTDIR = $$IDE_BUILD_TREE/libexec/qtcreator
     PERFPARSER_ELFUTILS_DESTDIR = $$IDE_BUILD_TREE/lib/qtcreator
