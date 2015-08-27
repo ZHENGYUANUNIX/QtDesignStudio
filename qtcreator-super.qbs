@@ -31,9 +31,10 @@ Project {
             additionalAutotests: [
                     path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/tests/tests.qbs",
                 ].filter(function(candidate) { return File.exists(candidate); });
-            additionalTools: [
-                path + "/perfparser/perfparser.qbs"
-            ]
+
+            // TODO: Move check into perfparser.qbs once the evaluation order bug has been fixed in qbs
+            additionalTools: qbs.targetOS.contains("linux")
+                             ? [path + "/perfparser/perfparser.qbs"] : []
         }
     }
 }
