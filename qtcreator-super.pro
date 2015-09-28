@@ -51,7 +51,7 @@ OTHER_FILES += .qmake.conf
 !exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
 
 !no_licensechecker {
-    !contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked): \
+    !contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked):!contains(QT_CONFIG, securetransport): \
         error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
 
     SUBDIRS += licensechecker
