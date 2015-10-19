@@ -1,22 +1,22 @@
 [submodule "licensechecker"]
 	path = licensechecker
-	url = ../../Comm-15470/licensechecker.git
+	url = ../tqtc-plugin-licensechecker.git
 	branch = 3.6
 [submodule "qmlprofiler"]
 	path = qmlprofiler
-	url = ../../Comm-15470/qmlprofiler.git
+	url = ../tqtc-plugin-qmlprofiler.git
 	branch = 3.6
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
-	url = ../../Comm-15470/qtquickdesigner.git
+	url = ../tqtc-plugin-qtquickdesigner.git
 	branch = 3.6
 [submodule "clangstaticanalyzer"]
 	path = clangstaticanalyzer
-	url = ../../Comm-15470/clangstaticanalyzer.git
+	url = ../tqtc-plugin-clangstaticanalyzer
         branch = 3.6
 [submodule "b2qt-qtcreator-plugin"]
 	path = boot2qt
-	url = ssh://codereview.qt-project.org/qt-creator/tqtc-plugin-boot2qt.git
+	url = ../tqtc-plugin-boot2qt.git
 	branch = 3.6
 [submodule "qt-creator"]
 	path = qtcreator
@@ -24,21 +24,21 @@
 	branch = 3.6
 [submodule "qtsdk-enterprise"]
 	path = qtsdk-enterprise
-	url = ../../QtRD-15810/qtsdk-enterprise.git
+	url = ../../qtsdk/tqtc-qtsdk.git
         branch = unifiedqt
 [submodule "vxworks-qtcreator-plugin"]
 	path = vxworks
-	url = ssh://codereview.qt-project.org/qt-creator/tqtc-plugin-vxworks.git
+	url = ../tqtc-plugin-vxworks.git
 	branch = 3.6
 [submodule "autotest"]
 	path = autotest
-	url = ../../QtRD-15810/autotest-qtcreator-plugin.git
+	url = ../tqtc-plugin-autotest.git
 	branch = 3.6
 [submodule "perfprofiler"]
 	path = perfprofiler
-	url = ../../Comm-15470/perfprofiler.git
+	url = ../tqtc-plugin-perfprofiler.git
 	branch = 3.6
 [submodule "perfparser"]
 	path = perfparser
-	url = ../../QtRD-15810/perfparser.git
+	url = ../tqtc-perfparser.git
 	branch = 3.6
