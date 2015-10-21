@@ -22,10 +22,6 @@
 	path = qtcreator
 	url = git://code.qt.io/qt-creator/qt-creator.git
 	branch = master
-[submodule "qtsdk-enterprise"]
-	path = qtsdk-enterprise
-	url = ../../qtsdk/tqtc-qtsdk.git
-        branch = unifiedqt
 [submodule "vxworks-qtcreator-plugin"]
 	path = vxworks
 	url = ../tqtc-plugin-vxworks.git
@@ -41,4 +37,8 @@
 [submodule "perfparser"]
 	path = perfparser
 	url = ../tqtc-perfparser.git
+	branch = master
+[submodule "license-managing"]
+	path = license-managing
+	url = ../../qtsdk/tqtc-license-managing.git
 	branch = master
