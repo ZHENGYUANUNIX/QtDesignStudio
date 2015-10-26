@@ -6,7 +6,7 @@ Project {
     name: "Qt Creator Super Project"
 
     qbsSearchPaths: ["qbs_resources", "qtcreator/qbs"]
-    property path licenseManagingDir: path + "/qtsdk-enterprise/license-managing"
+    property path licenseManagingDir: path + "/license-managing"
     property bool licenseCheckerEnabled: File.exists(licenseManagingDir)
 
     SubProject {
