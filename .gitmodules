@@ -38,6 +38,10 @@
 	path = perfparser
 	url = ../tqtc-perfparser.git
 	branch = 3.6
+[submodule "gammarayintegration"]
+	path = gammarayintegration
+	url = ../kdab-plugin-gammaray.git
+        branch = 3.6
 [submodule "license-managing"]
 	path = license-managing
 	url = ../../qtsdk/tqtc-license-managing.git
