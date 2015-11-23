@@ -12,9 +12,8 @@ SUBDIRS = \
     vxworks \
     autotest
 
-exists(gammaray-qtc-integration/gammarayintegration.pro):!isEmpty(QT.GammaRayClient.name) {
-    SUBDIRS += gammaray
-    gammaray.file = gammaray-qtc-integration/gammarayintegration.pro
+!isEmpty(QT.GammaRayClient.name) {
+    SUBDIRS += gammarayintegration
     gammaray.depends = qtcreator
 }
 
