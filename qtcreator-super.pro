@@ -14,7 +14,7 @@ SUBDIRS = \
 
 !isEmpty(QT.GammaRayClient.name) {
     SUBDIRS += gammarayintegration
-    gammaray.depends = qtcreator
+    gammarayintegration.depends = qtcreator
 }
 
 linux-g++*{
