@@ -14,7 +14,7 @@ Project {
         Properties {
             additionalPlugins: {
                 var candidates = [
-                    "autotest", "boot2qt", "clangstaticanalyzer", "licensechecker",
+                    "autotest", "boot2qt", "licensechecker",
                     "perfprofiler", "qmlprofiler", "vxworks"
                 ];
                 var plugins = [];
@@ -28,9 +28,6 @@ Project {
                 });
                 return plugins;
             }
-            additionalAutotests: [
-                    path + "/clangstaticanalyzer/plugins/clangstaticanalyzer/tests/tests.qbs",
-                ].filter(function(candidate) { return File.exists(candidate); });
 
             // TODO: Move check into perfparser.qbs once the evaluation order bug has been fixed in qbs
             additionalTools: qbs.targetOS.contains("linux")

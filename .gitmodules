@@ -10,10 +10,6 @@
 	path = qtquickdesigner
 	url = ../tqtc-plugin-qtquickdesigner.git
 	branch = 3.6
-[submodule "clangstaticanalyzer"]
-	path = clangstaticanalyzer
-	url = ../tqtc-plugin-clangstaticanalyzer
-        branch = 3.6
 [submodule "b2qt-qtcreator-plugin"]
 	path = boot2qt
 	url = ../tqtc-plugin-boot2qt.git
