@@ -2,10 +2,6 @@
 	path = licensechecker
 	url = ../tqtc-plugin-licensechecker.git
 	branch = 3.6
-[submodule "qmlprofiler"]
-	path = qmlprofiler
-	url = ../tqtc-plugin-qmlprofiler.git
-	branch = 3.6
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
 	url = ../tqtc-plugin-qtquickdesigner.git
@@ -21,10 +17,6 @@
 [submodule "vxworks-qtcreator-plugin"]
 	path = vxworks
 	url = ../tqtc-plugin-vxworks.git
-	branch = 3.6
-[submodule "autotest"]
-	path = autotest
-	url = ../tqtc-plugin-autotest.git
 	branch = 3.6
 [submodule "perfprofiler"]
 	path = perfprofiler
