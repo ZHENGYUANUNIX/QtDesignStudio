@@ -5,11 +5,9 @@ mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.ca
 SUBDIRS = \
     qtcreator \
     perfprofiler \
-    qmlprofiler \
     qtquickdesigner \
     boot2qt \
-    vxworks \
-    autotest
+    vxworks
 
 !isEmpty(QT.GammaRayClient.name) {
     SUBDIRS += gammarayintegration
@@ -32,15 +30,11 @@ linux-g++*{
 
 perfprofiler.depends = qtcreator
 
-qmlprofiler.depends = qtcreator
-
 qtquickdesigner.depends = qtcreator
 
 boot2qt.depends = qtcreator perfprofiler
 
 vxworks.depends = qtcreator
-
-autotest.depends = qtcreator
 
 OTHER_FILES += .qmake.conf
 
@@ -53,11 +47,9 @@ OTHER_FILES += .qmake.conf
     SUBDIRS += licensechecker
     licensechecker.depends = qtcreator
     perfprofiler.depends += licensechecker
-    qmlprofiler.depends += licensechecker
     qtquickdesigner.depends += licensechecker
     boot2qt.depends += licensechecker
     vxworks.depends += licensechecker
-    autotest.depends += licensechecker
 
     !licensechecker {
         # make it available to sub-project files

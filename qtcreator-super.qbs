@@ -14,8 +14,8 @@ Project {
         Properties {
             additionalPlugins: {
                 var candidates = [
-                    "autotest", "boot2qt", "licensechecker",
-                    "perfprofiler", "qmlprofiler", "vxworks"
+                    "boot2qt", "licensechecker",
+                    "perfprofiler", "vxworks"
                 ];
                 var plugins = [];
                 candidates.forEach(function(candidate) {
