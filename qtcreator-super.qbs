@@ -29,9 +29,7 @@ Project {
                 return plugins;
             }
 
-            // TODO: Move check into perfparser.qbs once the evaluation order bug has been fixed in qbs
-            additionalTools: qbs.targetOS.contains("linux")
-                             ? [path + "/perfparser/perfparser.qbs"] : []
+            additionalTools: [path + "/perfparser/perfparser.qbs"]
         }
     }
 }
