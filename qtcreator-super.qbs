@@ -14,13 +14,15 @@ Project {
         Properties {
             additionalPlugins: {
                 var candidates = [
-                    "boot2qt", "licensechecker",
+                    "boot2qt", "gammarayintegration", "licensechecker",
                     "perfprofiler", "vxworks"
                 ];
                 var plugins = [];
                 candidates.forEach(function(candidate) {
                     var file = FileInfo.joinPaths(path, candidate, "plugins", candidate,
                                              candidate + ".qbs");
+                    if (!File.exists(file))
+                        file = FileInfo.joinPaths(path, candidate, candidate + ".qbs");
                     if (File.exists(file)
                             && (candidate !== "licensechecker" || licenseCheckerEnabled)) {
                         plugins.push(file);
