@@ -24,7 +24,7 @@
 	branch = master
 [submodule "perfparser"]
 	path = perfparser
-	url = ../tqtc-perfparser.git
+	url = ../perfparser.git
 	branch = master
 [submodule "gammarayintegration"]
 	path = gammarayintegration
