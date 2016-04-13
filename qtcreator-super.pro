@@ -32,7 +32,7 @@ perfprofiler.depends = qtcreator
 
 qtquickdesigner.depends = qtcreator
 
-boot2qt.depends = qtcreator perfprofiler
+boot2qt.depends = qtcreator
 
 vxworks.depends = qtcreator
 
