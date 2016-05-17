@@ -28,6 +28,10 @@ Project {
                         plugins.push(file);
                     }
                 });
+                var isoIconBrowserPluginFile = path
+                        + "/qtquickdesigner/plugins/qmldesigner/isoiconbrowserplugin/isoiconbrowserplugin.qbs";
+                if (File.exists(isoIconBrowserPluginFile))
+                    plugins.push(isoIconBrowserPluginFile);
                 return plugins;
             }
 
