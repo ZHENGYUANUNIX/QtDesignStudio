@@ -1,9 +1,6 @@
 import qbs
 
 QtcPlugin {
-    Depends {
-        name: "LicenseChecker"
-        condition: project.licenseCheckerEnabled
-    }
-    cpp.defines: base.concat(project.licenseCheckerEnabled ? ["LICENSECHECKER"] : [])
+    Depends { name: "LicenseChecker"; required: false }
+    cpp.defines: base.concat(LicenseChecker.present ? ["LICENSECHECKER"] : [])
 }
