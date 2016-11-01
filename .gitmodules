@@ -1,35 +1,35 @@
 [submodule "licensechecker"]
 	path = licensechecker
 	url = ../tqtc-plugin-licensechecker.git
-	branch = 4.2
+	branch = master
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
 	url = ../tqtc-plugin-qtquickdesigner.git
-	branch = 4.2
+	branch = master
 [submodule "b2qt-qtcreator-plugin"]
 	path = boot2qt
 	url = ../tqtc-plugin-boot2qt.git
-	branch = 4.2
+	branch = master
 [submodule "qt-creator"]
 	path = qtcreator
 	url = git://code.qt.io/qt-creator/qt-creator.git
-	branch = 4.2
+	branch = master
 [submodule "vxworks-qtcreator-plugin"]
 	path = vxworks
 	url = ../tqtc-plugin-vxworks.git
-	branch = 4.2
+	branch = master
 [submodule "perfprofiler"]
 	path = perfprofiler
 	url = ../tqtc-plugin-perfprofiler.git
-	branch = 4.2
+	branch = master
 [submodule "perfparser"]
 	path = perfparser
 	url = ../perfparser.git
-	branch = 4.2
+	branch = master
 [submodule "gammarayintegration"]
 	path = gammarayintegration
 	url = ../kdab-plugin-gammaray.git
-        branch = 4.2
+        branch = master
 [submodule "license-managing"]
 	path = license-managing
 	url = ../../qtsdk/tqtc-license-managing.git
