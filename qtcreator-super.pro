@@ -41,9 +41,14 @@ OTHER_FILES += .qmake.conf
 !exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
 
 !no_licensechecker {
-    !contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked):!contains(QT_CONFIG, securetransport): \
-        error("LicenseChecker requires OpenSSL support in Qt. Giving up.")
 
+    greaterThan(QT_MAJOR_VERSION, 5)|greaterThan(QT_MINOR_VERSION, 7) { # Qt 5.8 or later
+        QT_FOR_CONFIG += network
+        !qtConfig(ssl): error("LicenseChecker requires OpenSSL/SecureTransport support in Qt. Giving up.")
+    } else {
+        !contains(QT_CONFIG, openssl):!contains(QT_CONFIG, openssl-linked):!contains(QT_CONFIG, securetransport): \
+            error("LicenseChecker requires OpenSSL/SecureTransport support in Qt. Giving up.")
+    }
     SUBDIRS += licensechecker
     licensechecker.depends = qtcreator
     perfprofiler.depends += licensechecker
