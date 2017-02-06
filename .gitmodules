@@ -29,7 +29,11 @@
 [submodule "gammarayintegration"]
 	path = gammarayintegration
 	url = ../kdab-plugin-gammaray.git
-        branch = 4.2
+	branch = 4.2
+[submodule "qtapplicationmanagerintegration"]
+	path = qtapplicationmanagerintegration
+	url = ../pcore-plugin-appman.git
+	branch = 4.2
 [submodule "license-managing"]
 	path = license-managing
 	url = ../../qtsdk/tqtc-license-managing.git
