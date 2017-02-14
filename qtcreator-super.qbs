@@ -15,7 +15,7 @@ Project {
             additionalPlugins: {
                 var candidates = [
                     "boot2qt", "gammarayintegration", "licensechecker",
-                    "perfprofiler", "vxworks"
+                    "perfprofiler", "qtapplicationmanagerintegration", "vxworks"
                 ];
                 var plugins = [];
                 candidates.forEach(function(candidate) {

@@ -28,6 +28,11 @@ linux-g++*{
     cache(PERFPARSER_ELFUTILS_INSTALLDIR)
 }
 
+exists(qtapplicationmanagerintegration/qtapplicationmanagerintegration.pro) {
+    SUBDIRS += qtapplicationmanagerintegration
+    qtapplicationmanagerintegration.depends = qtcreator boot2qt
+}
+
 perfprofiler.depends = qtcreator
 
 qtquickdesigner.depends = qtcreator
