@@ -32,6 +32,9 @@ Project {
                         + "/qtquickdesigner/plugins/qmldesigner/isoiconbrowserplugin/isoiconbrowserplugin.qbs";
                 if (File.exists(isoIconBrowserPluginFile))
                     plugins.push(isoIconBrowserPluginFile);
+                var qdbPluginFile = path + "/boot2qt/plugins/qdb/qdb.qbs";
+                if (File.exists(qdbPluginFile))
+                    plugins.push(qdbPluginFile);
                 return plugins;
             }
 
