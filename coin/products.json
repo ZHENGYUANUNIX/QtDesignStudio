@@ -1,0 +1,95 @@
+[
+    {
+        "product": "qt-creator",
+        "product_type": "qt_app",
+        "dependencies": [
+            {
+                "product": "qt5",
+                "multiplex": [
+                    {
+                        "ref": "5.7",
+                        "dependencies": [
+                            {
+                                "product": "platform",
+                                "multiplex": [
+                                    {
+                                        "host_os": "Windows",
+                                        "host_os_version": "Windows_10",
+                                        "target_os": "Windows",
+                                        "target_os_version": "Windows_10",
+                                        "compiler": "MSVC2015"
+                                    },
+                                    {
+                                        "host_os": "MacOS",
+                                        "host_os_version": "OSX_10_10",
+                                        "target_os": "MacOS",
+                                        "target_os_version": "OSX_10_10",
+                                        "compiler": "Clang"
+                                    },
+                                    {
+                                        "host_os": "Linux",
+                                        "host_os_version": "RHEL_6_6",
+                                        "target_os": "Linux",
+                                        "target_os_version": "RHEL_6_6",
+                                        "compiler": "GCC"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "ref": "v5.8.0",
+                        "dependencies": [
+                            {
+                                "product": "platform",
+                                "multiplex": [
+                                    {
+                                        "host_os": "Windows",
+                                        "host_os_version": "Windows_10",
+                                        "target_os": "Windows",
+                                        "target_os_version": "Windows_10",
+                                        "compiler": "MSVC2015"
+                                    },
+                                    {
+                                        "host_os": "MacOS",
+                                        "host_os_version": "OSX_10_10",
+                                        "target_os": "MacOS",
+                                        "target_os_version": "OSX_10_10",
+                                        "compiler": "Clang"
+                                    },
+                                    {
+                                        "host_os": "Linux",
+                                        "host_os_version": "RHEL_7_2",
+                                        "target_os": "Linux",
+                                        "target_os_version": "RHEL_7_2",
+                                        "compiler": "GCC"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "product": "license-managing",
+                "ref": "master",
+                "dependencies": [
+                    {
+                        "product": "qt5",
+                        "ref": "=qt5.ref",
+                        "dependencies": [
+                            {
+                                "product": "platform",
+                                "host_os": "=qt5.platform.host_os",
+                                "host_os_version": "=qt5.platform.host_os_version",
+                                "target_os": "=qt5.platform.target_os",
+                                "target_os_version": "=qt5.platform.target_os_version",
+                                "compiler": "=qt5.platform.compiler"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
