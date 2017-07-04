@@ -37,4 +37,4 @@
 [submodule "license-managing"]
 	path = license-managing
 	url = ../../qtsdk/tqtc-license-managing.git
-	branch = master
+	branch = 1.0
