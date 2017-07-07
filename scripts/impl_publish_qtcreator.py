@@ -99,6 +99,11 @@ def getArgs():
         help='Version used in the path to the installer binaries, e.g. 4.3.0')
     parser.add_argument('--snapshot-version', required=True,
         help='Version used in the path to the snapshot build, e.g. 4.3.0-rc1_58x')
+    type_group = parser.add_mutually_exclusive_group(required=True)
+    type_group.add_argument('--prerelease', dest='type', action='store_const', const='development_releases',
+        help='Files will be uploaded to "development_releases"')
+    type_group.add_argument('--final', dest='type', action='store_const', const='official_releases',
+        help='Files will be uploaded to "official_releases"')
     return parser.parse_args()
 
 def main():
@@ -106,7 +111,7 @@ def main():
     file_base = '/srv/jenkins_data'
     server_user = 'digia'
     server_host = 'master.qt.io'
-    server_path = '/data/pub/qtproject/official_releases'
+    server_path = '/data/pub/qtproject/' + args.type
     to_copy = files_to_copy(file_base, args.installer_version, args.snapshot_version, args.display_version)
     copy_list(to_copy)
     to_scp = files_to_scp(file_base, args.display_version, server_path)
