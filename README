@@ -12,11 +12,17 @@ Initializing:
 -------------
 git checkout <qtcreatorbranch>
 git submodule update --init --remote
+cd qtcreator
+git submodule update --init
+cd ..
 
 Updating:
 ---------
 git pull --rebase
 git submodule update --remote --rebase
+cd qtcreator
+git submodule update
+cd ..
 
 qt-creator is pulled from the internal mirror, which is updated hourly.
 
