@@ -15,7 +15,8 @@ SUBDIRS = \
 }
 
 win32 {
-    SUBDIRS += perfparser
+    # Windows doesn't have system elfutils, so if no install dir is given we won't find them.
+    !isEmpty(ELFUTILS_INSTALL_DIR): SUBDIRS += perfparser
     PERFPARSER_APP_DESTDIR = $$IDE_BUILD_TREE/bin
     PERFPARSER_APP_INSTALLDIR = $$QTC_PREFIX/bin
 
