@@ -38,3 +38,7 @@
 	path = license-managing
 	url = ../../qtsdk/tqtc-license-managing.git
 	branch = master
+[submodule "qmlpreview"]
+	path = qmlpreview
+	url = ../tqtc-plugin-qmlpreview.git
+	branch = master

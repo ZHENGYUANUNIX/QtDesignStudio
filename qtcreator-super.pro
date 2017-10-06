@@ -7,7 +7,8 @@ SUBDIRS = \
     perfprofiler \
     qtquickdesigner \
     boot2qt \
-    vxworks
+    vxworks \
+    qmlpreview
 
 !isEmpty(QT.GammaRayClient.name) {
     SUBDIRS += gammarayintegration
@@ -53,6 +54,8 @@ boot2qt.depends = qtcreator
 
 vxworks.depends = qtcreator
 
+qmlpreview.depends = qtcreator
+
 OTHER_FILES += .qmake.conf
 
 !exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
@@ -72,6 +75,7 @@ OTHER_FILES += .qmake.conf
     qtquickdesigner.depends += licensechecker
     boot2qt.depends += licensechecker
     vxworks.depends += licensechecker
+    qmlpreview.depends += licensechecker
 
     !licensechecker {
         # make it available to sub-project files
