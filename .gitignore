@@ -26,6 +26,9 @@ Thumbs.db
 # Vim temporary files
 .*.swp
 
+# compiled python
+*.pyc
+
 # Visual Studio generated files
 *.ib_pdb_index
 *.sln
