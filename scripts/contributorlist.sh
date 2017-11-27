@@ -7,7 +7,7 @@ TO="$2"
 
 # git fetch origin
 
-git log "origin/${FROM}..origin/${TO}" | grep "^Author: " | cut -d' ' -f2- | sort -u \
+git log "origin/${FROM}..origin/${TO}" | grep "^Author: " | cut -d' ' -f2- | sort -u --ignore-case \
     | sed -e "s/@digia.com>/@theqtcompany.com>/i" \
     | sed -e "s/@theqtcompany.com>/@qt.io>/i" \
     \
@@ -23,5 +23,5 @@ git log "origin/${FROM}..origin/${TO}" | grep "^Author: " | cut -d' ' -f2- | sor
     | sed -e "s/^.*<no.smile.face@gmail.com>.*$/Evgenly Stepanov/i" \
     | sed -e "s/^.*<hluk@email.cz>.*$/Lukas Holecek/i" \
     \
-    | sed -e "s/ <.*$//" | sort -u
+    | sed -e "s/ <.*$//" | sort -u --ignore-case
 
