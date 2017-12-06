@@ -56,8 +56,6 @@ vxworks.depends = qtcreator
 
 qmlpreview.depends = qtcreator
 
-OTHER_FILES += .qmake.conf
-
 !exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
 
 !no_licensechecker {
@@ -89,3 +87,9 @@ OTHER_FILES += .qmake.conf
         cache(CONFIG, sub, CONFIG_LICENSECHECKER)
     }
 }
+
+OTHER_FILES += \
+    .qmake.conf \
+    qtcreator-super.qbs \
+    qbs_resources/imports/QtcCommercialPlugin.qbs \
+    README
