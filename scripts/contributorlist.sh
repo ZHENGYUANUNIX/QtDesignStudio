@@ -1,13 +1,11 @@
 #!/bin/bash
 
-FROM="$1"
-TO="$2"
+REVISION_RANGE="$1"
 
 #set -x
 
 # git fetch origin
-
-git log "origin/${FROM}..origin/${TO}" | grep "^Author: " | cut -d' ' -f2- | sort -u --ignore-case \
+git log "${REVISION_RANGE}" | grep "^Author: " | cut -d' ' -f2- | sort -u --ignore-case \
     | sed -e "s/@digia.com>/@theqtcompany.com>/i" \
     | sed -e "s/@theqtcompany.com>/@qt.io>/i" \
     \
