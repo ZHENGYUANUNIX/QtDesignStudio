@@ -86,7 +86,8 @@ def files_to_scp(file_base, version, server_base):
                    glob.glob(os.path.join(src_base, 'windows_*')))
     zipfile_candidates = [os.path.join(d, f)
                           for d in directories
-                          for f in ['qtcreator.7z', 'qtcreator_dev.7z', 'qtcreatorcdbext.7z', 'wininterrupt.7z']]
+                          for f in ['qtcreator.7z', 'qtcreator-debug.7z',
+                                    'qtcreator_dev.7z', 'qtcreatorcdbext.7z', 'wininterrupt.7z']]
     zipfiles = filter(os.path.exists, zipfile_candidates)
     file_list = [(fp, fp.replace(src_base, server_prefix)) for fp in files]
     return file_list + [(fp, fp.replace(src_base, server_prefix + '/installer_source')) for fp in zipfiles]
