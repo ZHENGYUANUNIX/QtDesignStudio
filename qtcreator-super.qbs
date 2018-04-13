@@ -15,7 +15,7 @@ Project {
             additionalPlugins: {
                 var candidates = [
                     "boot2qt", "gammarayintegration", "licensechecker",
-                    "perfprofiler", "qmlpreview", "qtapplicationmanagerintegration", "vxworks"
+                    "perfprofiler", "qmlpreview", "vxworks"
                 ];
                 var plugins = [];
                 candidates.forEach(function(candidate) {
@@ -28,13 +28,16 @@ Project {
                         plugins.push(file);
                     }
                 });
-                var isoIconBrowserPluginFile = path
-                        + "/qtquickdesigner/plugins/qmldesigner/isoiconbrowserplugin/isoiconbrowserplugin.qbs";
-                if (File.exists(isoIconBrowserPluginFile))
-                    plugins.push(isoIconBrowserPluginFile);
-                var qdbPluginFile = path + "/boot2qt/plugins/qdb/qdb.qbs";
-                if (File.exists(qdbPluginFile))
-                    plugins.push(qdbPluginFile);
+                var specialCandidates = [
+                    "boot2qt/plugins/qdb/qdb.qbs",
+                    "qtapplicationmanagerintegration/plugins/qtapplicationmanager/qtapplicationmanager.qbs",
+                    "qtquickdesigner/plugins/qmldesigner/isoiconbrowserplugin/isoiconbrowserplugin.qbs",
+                ];
+                specialCandidates.forEach(function(candidate) {
+                    var file = FileInfo.joinPaths(path, candidate);
+                    if (File.exists(file))
+                        plugins.push(file);
+                });
                 return plugins;
             }
 
