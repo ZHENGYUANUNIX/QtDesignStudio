@@ -21,5 +21,7 @@ git log "${REVISION_RANGE}" | grep "^Author: " | cut -d' ' -f2- | sort -u --igno
     | sed -e "s/^.*<no.smile.face@gmail.com>.*$/Evgenly Stepanov/i" \
     | sed -e "s/^.*<hluk@email.cz>.*$/Lukas Holecek/i" \
     \
-    | sed -e "s/ <.*$//" | sort -u --ignore-case
+    | sed -e "s/ <.*$//" \
+    | sed -e "s/$/  /" \
+    | sort -u --ignore-case
 
