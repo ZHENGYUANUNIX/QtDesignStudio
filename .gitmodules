@@ -1,3 +1,7 @@
+[submodule "license-managing"]
+	path = license-managing
+	url = ../../qtsdk/tqtc-license-managing.git
+	branch = master
 [submodule "licensechecker"]
 	path = licensechecker
 	url = ../tqtc-plugin-licensechecker.git
@@ -33,10 +37,6 @@
 [submodule "qtapplicationmanagerintegration"]
 	path = qtapplicationmanagerintegration
 	url = ../pcore-plugin-appman.git
-	branch = master
-[submodule "license-managing"]
-	path = license-managing
-	url = ../../qtsdk/tqtc-license-managing.git
 	branch = master
 [submodule "qmlpreview"]
 	path = qmlpreview
