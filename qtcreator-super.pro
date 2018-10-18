@@ -14,32 +14,6 @@ SUBDIRS = \
     gammarayintegration.depends = qtcreator boot2qt
 }
 
-win32 {
-    # Windows doesn't have system elfutils, so if no install dir is given we won't find them.
-    !isEmpty(ELFUTILS_INSTALL_DIR): SUBDIRS += perfparser
-    PERFPARSER_APP_DESTDIR = $$IDE_BUILD_TREE/bin
-    PERFPARSER_APP_INSTALLDIR = $$QTC_PREFIX/bin
-
-    # On windows we take advantage of the fixed path in eblopenbackend.c: "..\lib\elfutils\"
-    PERFPARSER_ELFUTILS_INSTALLDIR = $$QTC_PREFIX/bin
-    PERFPARSER_ELFUTILS_BACKENDS_INSTALLDIR = $$QTC_PREFIX/lib/elfutils
-} else {
-    linux-g++: SUBDIRS += perfparser
-    PERFPARSER_APP_DESTDIR = $$IDE_BUILD_TREE/libexec/qtcreator
-    PERFPARSER_APP_INSTALLDIR = $$QTC_PREFIX/libexec/qtcreator
-
-    # On linux we have "$ORIGIN/../$LIB/elfutils" in eblopenbackend.c. Unfortunately $LIB can be
-    # many different things, so we target the second try where it just loads the plain file name.
-    # This also allows us to put libdw and libelf in a subdir of lib.
-    PERFPARSER_ELFUTILS_INSTALLDIR = $$QTC_PREFIX/lib/elfutils
-    PERFPARSER_ELFUTILS_BACKENDS_INSTALLDIR = $$QTC_PREFIX/lib/elfutils
-}
-
-cache(PERFPARSER_APP_DESTDIR)
-cache(PERFPARSER_APP_INSTALLDIR)
-cache(PERFPARSER_ELFUTILS_INSTALLDIR)
-cache(PERFPARSER_ELFUTILS_BACKENDS_INSTALLDIR)
-
 exists(qtapplicationmanagerintegration/qtapplicationmanagerintegration.pro) {
     SUBDIRS += qtapplicationmanagerintegration
     qtapplicationmanagerintegration.depends = qtcreator boot2qt

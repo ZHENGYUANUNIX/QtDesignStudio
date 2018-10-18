@@ -22,10 +22,6 @@
 	path = vxworks
 	url = ../tqtc-plugin-vxworks.git
 	branch = master
-[submodule "perfparser"]
-	path = perfparser
-	url = ../perfparser.git
-	branch = master
 [submodule "gammarayintegration"]
 	path = gammarayintegration
 	url = ../kdab-plugin-gammaray.git
