@@ -22,10 +22,6 @@
 	path = vxworks
 	url = ../tqtc-plugin-vxworks.git
 	branch = master
-[submodule "perfprofiler"]
-	path = perfprofiler
-	url = ../tqtc-plugin-perfprofiler.git
-	branch = master
 [submodule "perfparser"]
 	path = perfparser
 	url = ../perfparser.git

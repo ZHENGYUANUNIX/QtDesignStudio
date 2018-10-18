@@ -4,7 +4,6 @@ mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.ca
 
 SUBDIRS = \
     qtcreator \
-    perfprofiler \
     qtquickdesigner \
     boot2qt \
     vxworks \
