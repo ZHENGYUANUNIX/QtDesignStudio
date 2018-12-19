@@ -40,8 +40,6 @@ Project {
                 });
                 return plugins;
             }
-
-            additionalTools: [path + "/perfparser/perfparser.qbs"]
         }
     }
 }
