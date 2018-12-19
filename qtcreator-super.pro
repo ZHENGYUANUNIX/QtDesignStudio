@@ -19,8 +19,6 @@ exists(qtapplicationmanagerintegration/qtapplicationmanagerintegration.pro) {
     qtapplicationmanagerintegration.depends = qtcreator boot2qt
 }
 
-perfprofiler.depends = qtcreator
-
 qtquickdesigner.depends = qtcreator
 
 boot2qt.depends = qtcreator
@@ -42,7 +40,6 @@ qmlpreview.depends = qtcreator
     }
     SUBDIRS += licensechecker
     licensechecker.depends = qtcreator
-    perfprofiler.depends += licensechecker
     qtquickdesigner.depends += licensechecker
     boot2qt.depends += licensechecker
     vxworks.depends += licensechecker
