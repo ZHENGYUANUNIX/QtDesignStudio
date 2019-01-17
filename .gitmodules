@@ -30,7 +30,3 @@
 	path = qtapplicationmanagerintegration
 	url = ../pcore-plugin-appman.git
 	branch = master
-[submodule "qmlpreview"]
-	path = qmlpreview
-	url = ../tqtc-plugin-qmlpreview.git
-	branch = master

@@ -6,8 +6,7 @@ SUBDIRS = \
     qtcreator \
     qtquickdesigner \
     boot2qt \
-    vxworks \
-    qmlpreview
+    vxworks
 
 !isEmpty(QT.GammaRayClient.name) {
     SUBDIRS += gammarayintegration
@@ -25,8 +24,6 @@ boot2qt.depends = qtcreator
 
 vxworks.depends = qtcreator
 
-qmlpreview.depends = qtcreator
-
 !exists(licensechecker/licensechecker.pro): CONFIG += no_licensechecker
 
 !no_licensechecker {
@@ -43,7 +40,6 @@ qmlpreview.depends = qtcreator
     qtquickdesigner.depends += licensechecker
     boot2qt.depends += licensechecker
     vxworks.depends += licensechecker
-    qmlpreview.depends += licensechecker
 
     !licensechecker {
         # make it available to sub-project files
