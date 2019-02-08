@@ -1,9 +1,10 @@
 
 Prerequisites:
 --------------
-* Git version 1.8.2 or later  
+* Git version 2.10 or later  
   For the `submodule --remote` option, which makes git pull the latest `HEAD`
-  of the right branch for the submodules, instead of a fixed commit.
+  of the right branch for the submodules, instead of a fixed commit, and
+  for the `branch = .` entry in `.gitmodules`.
 
 * Qt5  
   The only supported Qt major version for this repository's .pro file.
@@ -28,7 +29,8 @@ git submodule update
 cd ..
 ```
 
-qt-creator is pulled from the internal mirror, which is updated hourly.
+`qt-creator` is pulled from the mirror at `code.qt.io`, which is updated with
+a short delay.
 
 Working:
 --------
