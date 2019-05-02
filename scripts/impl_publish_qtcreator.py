@@ -39,7 +39,7 @@ def scp_list(user, host, file_list):
         dest_spec = user + '@' + host + ':' + dest
         print(src + ' -> ' + dest_spec)
         path = os.path.dirname(dest)
-        if not path in visited_paths:
+        if path not in visited_paths:
             ensure_remote_path(user, host, path)
             visited_paths.add(path)
         subprocess.check_call(['scp', src, dest_spec])
@@ -79,7 +79,7 @@ def files_to_scp(file_base, version, server_base):
     src_base = archive_path(file_base, version)
     server_prefix = server_base + '/qtcreator/' + short_version(version) + '/.' + version
     # open source "installer" files and source files, but without the _installer file on macOS
-    files = [fp for fp in glob.glob(os.path.join(src_base, '*opensource*')) if not '_installer' in fp]
+    files = [fp for fp in glob.glob(os.path.join(src_base, '*opensource*')) if '_installer' not in fp]
     # 7zips
     directories = (glob.glob(os.path.join(src_base, 'linux_*')) +
                    glob.glob(os.path.join(src_base, 'mac_*')) +
