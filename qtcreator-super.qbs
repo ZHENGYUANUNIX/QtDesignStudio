@@ -14,7 +14,7 @@ Project {
         Properties {
             additionalPlugins: {
                 var candidates = [
-                    "boot2qt", "gammarayintegration", "licensechecker", "vxworks"
+                    "gammarayintegration", "licensechecker", "vxworks"
                 ];
                 var plugins = [];
                 candidates.forEach(function(candidate) {
@@ -28,7 +28,6 @@ Project {
                     }
                 });
                 var specialCandidates = [
-                    "boot2qt/plugins/qdb/qdb.qbs",
                     "qtapplicationmanagerintegration/plugins/qtapplicationmanager/qtapplicationmanager.qbs",
                     "qtquickdesigner/plugins/qmldesigner/isoiconbrowserplugin/isoiconbrowserplugin.qbs",
                 ];

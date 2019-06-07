@@ -5,22 +5,19 @@ mkpath($$OUT_PWD/qtcreator) # so the qtcreator.pro is able to create a .qmake.ca
 SUBDIRS = \
     qtcreator \
     qtquickdesigner \
-    boot2qt \
     vxworks
 
 !isEmpty(QT.GammaRayClient.name) {
     SUBDIRS += gammarayintegration
-    gammarayintegration.depends = qtcreator boot2qt
+    gammarayintegration.depends = qtcreator
 }
 
 exists(qtapplicationmanagerintegration/qtapplicationmanagerintegration.pro) {
     SUBDIRS += qtapplicationmanagerintegration
-    qtapplicationmanagerintegration.depends = qtcreator boot2qt
+    qtapplicationmanagerintegration.depends = qtcreator
 }
 
 qtquickdesigner.depends = qtcreator
-
-boot2qt.depends = qtcreator
 
 vxworks.depends = qtcreator
 
@@ -38,7 +35,6 @@ vxworks.depends = qtcreator
     SUBDIRS += licensechecker
     licensechecker.depends = qtcreator
     qtquickdesigner.depends += licensechecker
-    boot2qt.depends += licensechecker
     vxworks.depends += licensechecker
 
     !licensechecker {
