@@ -2,7 +2,16 @@ cmake_minimum_required(VERSION 3.9)
 
 project(QtCreatorTQtCSuper)
 
-list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR}/cmake)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_CXX_STANDARD 14)
+
+list(APPEND CMAKE_PREFIX_PATH
+  ${CMAKE_BINARY_DIR}/cmake
+  ${CMAKE_CURRENT_SOURCE_DIR}/license-managing
+)
 
 add_subdirectory(qtcreator)
+add_subdirectory(licensechecker)
 add_subdirectory(vxworks)
