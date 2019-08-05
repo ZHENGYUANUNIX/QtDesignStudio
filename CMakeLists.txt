@@ -14,5 +14,4 @@ list(APPEND CMAKE_PREFIX_PATH
 
 add_subdirectory(qtcreator)
 add_subdirectory(licensechecker)
-add_subdirectory(boot2qt)
 add_subdirectory(vxworks)
