@@ -8,6 +8,7 @@ REVISION_RANGE="$1"
 git log "${REVISION_RANGE}" | grep "^Author: " | cut -d' ' -f2- | sort -u --ignore-case \
     | sed -e "s/@digia.com>/@theqtcompany.com>/i" \
     | sed -e "s/@theqtcompany.com>/@qt.io>/i" \
+    | sed -e "s/^The Qt Project.*//i" \
     \
     | sed -e "s/^.*<erik.verbruggen@qt.io>/Erik Verbrüggen/i" \
     | sed -e "s/^.*<kai.koehne@qt.io>.*/Kai Köhne/i" \
@@ -20,6 +21,7 @@ git log "${REVISION_RANGE}" | grep "^Author: " | cut -d' ' -f2- | sort -u --igno
     | sed -e "s/^.*<karsten.heimrich@qt.io>.*$/Karsten Heimrich/i" \
     | sed -e "s/^.*<no.smile.face@gmail.com>.*$/Evgenly Stepanov/i" \
     | sed -e "s/^.*<hluk@email.cz>.*$/Lukas Holecek/i" \
+    | sed -e "s/^.*<cristian.maureira-fredes@qt.io>.*$/Cristián Maureira-Fredes/i" \
     \
     | sed -e "s/ <.*$//" \
     | sed -e "s/$/  /" \
