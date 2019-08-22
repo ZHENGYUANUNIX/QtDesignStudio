@@ -14,6 +14,12 @@ list(APPEND CMAKE_PREFIX_PATH
 
 set(QTC_MERGE_BINARY_DIR YES)
 
+# level 0
 add_subdirectory(qtcreator)
+
+# level 1
 add_subdirectory(licensechecker)
+add_subdirectory(qtapplicationmanagerintegration)
+
+# level 2
 add_subdirectory(vxworks)
