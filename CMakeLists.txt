@@ -12,6 +12,8 @@ list(APPEND CMAKE_PREFIX_PATH
   ${CMAKE_CURRENT_SOURCE_DIR}/license-managing
 )
 
+set(QTC_MERGE_BINARY_DIR YES)
+
 add_subdirectory(qtcreator)
 add_subdirectory(licensechecker)
 add_subdirectory(vxworks)
