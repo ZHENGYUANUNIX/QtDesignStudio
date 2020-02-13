@@ -15,6 +15,7 @@ git log "${REVISION_RANGE}" | grep "^Author: " | cut -d' ' -f2- | sort -u --igno
     | sed -e "s/^.*<kakoehne@linux-k5ea.home>/Kai Köhne/i" \
     | sed -e "s/^.*<hjk121@nokiamail.com>.*$/André Pönitz/i" \
     | sed -e "s/^.*<hjk@qt.io>.*$/André Pönitz/i" \
+    | sed -e "s/^.*<martonmiklosqdev@gmail.com>.*/Miklós Márton/i" \
     | sed -e "s/^.*<robert.loehning@qt.io>.*$/Robert Löhning/i" \
     | sed -e "s/^.*<jaroslaw.kobus@qt.io>.*$/Jaroslaw Kobus/i" \
     | sed -e "s/^.*<joerg.bornemann@qt.io>.*$/Jörg Bornemann/i" \
