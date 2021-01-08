@@ -1,28 +1,6 @@
-[submodule "license-managing"]
-	path = license-managing
-	url = ../../qtsdk/tqtc-license-managing.git
-	branch = master
-[submodule "licensechecker"]
-	path = licensechecker
-	url = ../tqtc-plugin-licensechecker.git
-	branch = .
-[submodule "qtquickdesigner"]
-	path = qtquickdesigner
-	url = ../tqtc-plugin-qtquickdesigner.git
-	branch = .
-[submodule "qt-creator"]
+[submodule "qtcreator"]
 	path = qtcreator
 	url = git://code.qt.io/qt-creator/qt-creator.git
-	branch = .
-[submodule "vxworks-qtcreator-plugin"]
-	path = vxworks
-	url = ../tqtc-plugin-vxworks.git
-	branch = .
-[submodule "gammarayintegration"]
-	path = gammarayintegration
-	url = ../kdab-plugin-gammaray.git
-	branch = .
-[submodule "qtapplicationmanagerintegration"]
-	path = qtapplicationmanagerintegration
-	url = ../pcore-plugin-appman.git
-	branch = .
+[submodule "qtquickdesigner"]
+	path = qtquickdesigner
+	url = ssh://codereview.qt-project.org:29418/qt-creator/tqtc-plugin-qtquickdesigner
