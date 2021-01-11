@@ -9,6 +9,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 17)
 
+set(QTC_MERGE_BINARY_DIR ON)
 set(BUILD_DESIGNSTUDIO ON CACHE BOOL "Build design studio" FORCE)
 set(BUILD_PLUGINS Core;CppTools;Texteditor;QtSupport;ResourceEditor;QmlJSTools;QmlJSEditor;QmakeProjectManager;QmlDesigner;QmlPreview;ProjectExplorer;QmlProjectManager;MultiLanguage;specgenerator CACHE STRING "Build plugins" FORCE)
 
