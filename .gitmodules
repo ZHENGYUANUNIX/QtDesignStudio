@@ -1,6 +1,6 @@
 [submodule "qtcreator"]
 	path = qtcreator
-	url = git://code.qt.io/qt-creator/qt-creator.git
+	url = ../qt-creator/qt-creator
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
-	url = ssh://codereview.qt-project.org:29418/qt-creator/tqtc-plugin-qtquickdesigner
+	url = ../qt-creator/tqtc-plugin-qtquickdesigner
