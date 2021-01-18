@@ -20,6 +20,7 @@ ${CMAKE_BINARY_DIR}/cmake
 
 add_subdirectory(qtcreator)
 add_subdirectory(qtquickdesigner)
+add_subdirectory(telemetry)
 
 feature_summary(INCLUDE_QUIET_PACKAGES WHAT
 PACKAGES_FOUND PACKAGES_NOT_FOUND

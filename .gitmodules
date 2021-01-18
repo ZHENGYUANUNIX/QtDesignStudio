@@ -4,3 +4,6 @@
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
 	url = ../qt-creator/tqtc-plugin-qtquickdesigner
+[submodule "telemetry"]
+	path = telemetry
+	url = ../qt-creator/plugin-telemetry

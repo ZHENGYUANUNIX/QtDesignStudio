@@ -9,4 +9,7 @@ cd qtquickdesigner
 git checkout --track origin/4.14
 gitdir=$(git rev-parse --git-dir); scp -P 29418 codereview.qt-project.org:hooks/commit-msg ${gitdir}/hooks/
 cd ..
-
+cd telemetry
+git checkout --track origin/4.14
+gitdir=$(git rev-parse --git-dir); scp -P 29418 codereview.qt-project.org:hooks/commit-msg ${gitdir}/hooks/
+cd ..
