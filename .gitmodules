@@ -1,9 +1,9 @@
 [submodule "qtcreator"]
 	path = qtcreator
-	url = ../qt-creator/qt-creator
+	url = ../qt-creator.git
 [submodule "qtquickdesigner"]
 	path = qtquickdesigner
-	url = ../qt-creator/tqtc-plugin-qtquickdesigner
+	url = ../tqtc-plugin-qtquickdesigner.git
 [submodule "telemetry"]
 	path = telemetry
-	url = ../qt-creator/plugin-telemetry
+	url = ../plugin-telemetry.git
