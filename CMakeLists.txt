@@ -12,7 +12,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(QTC_MERGE_BINARY_DIR ON)
 set(BUILD_DESIGNSTUDIO ON CACHE BOOL "Build design studio" FORCE)
 set(MULTILANGUAGE_SUPPORT_SUBDIRECTORY "${CMAKE_CURRENT_LIST_DIR}/qtquickdesigner/libs/multilanguage-support")
-set(BUILD_PLUGINS Core;CppTools;Texteditor;QtSupport;ResourceEditor;QmlJSTools;QmlJSEditor;QmakeProjectManager;QmlDesigner;QmlPreview;ProjectExplorer;QmlProjectManager;MultiLanguage;specgenerator CACHE STRING "Build plugins" FORCE)
+
+set(BUILD_PLUGINS
+    Core;CppTools;Designer;Texteditor;CodePaster;DiffEditor;ProjectExplorer;VcsBase;Debugger;QtSupport;ResourceEditor;QmlJSTools;QmlJSEditor;QmakeProjectManager;QmlDesigner;QmlPreview;QmlProjectManager;AssetImporterPlugin;EventListPlugin;IsoIconBrowserPlugin;MultiLanguage;StudioPlugin;SpecGenerator
+    CACHE STRING "Build plugins" FORCE)
 
 list(APPEND CMAKE_PREFIX_PATH
 ${CMAKE_BINARY_DIR}/cmake
