@@ -13,8 +13,16 @@ set(QTC_MERGE_BINARY_DIR ON)
 set(BUILD_DESIGNSTUDIO ON CACHE BOOL "Build design studio" FORCE)
 set(MULTILANGUAGE_SUPPORT_SUBDIRECTORY "${CMAKE_CURRENT_LIST_DIR}/qtquickdesigner/libs/multilanguage-support")
 
+# Qt 5.15.2 have a problem with StudioWelcome so add that if everybody updated to something newer
 set(BUILD_PLUGINS
-    Core;CppTools;Designer;Texteditor;CodePaster;DiffEditor;ProjectExplorer;VcsBase;Debugger;QtSupport;ResourceEditor;QmlJSTools;QmlJSEditor;QmakeProjectManager;QmlDesigner;QmlPreview;QmlProjectManager;AssetImporterPlugin;EventListPlugin;IsoIconBrowserPlugin;MultiLanguage;StudioPlugin;SpecGenerator
+    Core CppTools Designer Texteditor CodePaster Help
+    DiffEditor ProjectExplorer VcsBase Debugger
+    QtSupport ResourceEditor QmlJSTools QmlJSEditor
+    QmakeProjectManager QmlDesigner QmlPreview
+    QmlProjectManager AssetImporterPlugin
+    EventListPlugin IsoIconBrowserPlugin MultiLanguage
+    StudioPlugin SpecGenerator
+    assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin
     CACHE STRING "Build plugins" FORCE)
 
 list(APPEND CMAKE_PREFIX_PATH
