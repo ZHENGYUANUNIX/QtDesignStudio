@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 
+
 include(FeatureSummary)
 
 project(QtDesignStudioTQtCSuper)
@@ -20,18 +21,27 @@ set(BUILD_PLUGINS
     QtSupport ResourceEditor QmlJSTools QmlJSEditor
     QmakeProjectManager QmlDesigner QmlPreview
     QmlProjectManager AssetImporterPlugin
-    EventListPlugin IsoIconBrowserPlugin MultiLanguage
-    StudioPlugin SpecGenerator
+    EventListPlugin IsoIconBrowserPlugin
+    StudioPlugin
     assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin
     CACHE STRING "Build plugins" FORCE)
 
 list(APPEND CMAKE_PREFIX_PATH
 ${CMAKE_BINARY_DIR}/cmake
 )
+find_package(Qt6 QUIET)
+
+if (NOT Qt6_FOUND)
+    list(APPEND BUILD_PLUGINS MultiLanguage)
+    list(APPEND BUILD_PLUGINS SpecGenerator)
+endif ()
 
 add_subdirectory(qtcreator)
 add_subdirectory(qtquickdesigner)
-add_subdirectory(telemetry)
+if (NOT Qt6_FOUND)
+    add_subdirectory(telemetry)
+endif ()
+
 
 feature_summary(INCLUDE_QUIET_PACKAGES WHAT
 PACKAGES_FOUND PACKAGES_NOT_FOUND
