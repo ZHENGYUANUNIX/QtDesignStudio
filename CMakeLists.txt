@@ -21,8 +21,7 @@ set(BUILD_PLUGINS
     QtSupport ResourceEditor QmlJSTools QmlJSEditor
     QmakeProjectManager QmlDesigner QmlPreview
     QmlProjectManager AssetImporterPlugin
-    EventListPlugin IsoIconBrowserPlugin
-    StudioPlugin
+    IsoIconBrowserPlugin StudioPlugin
     assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin
     CACHE STRING "Build plugins" FORCE)
 
