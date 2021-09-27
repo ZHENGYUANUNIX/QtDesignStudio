@@ -16,7 +16,7 @@ set(MULTILANGUAGE_SUPPORT_SUBDIRECTORY "${CMAKE_CURRENT_LIST_DIR}/qtquickdesigne
 
 # Qt 5.15.2 have a problem with StudioWelcome so add that if everybody updated to something newer
 set(BUILD_PLUGINS
-    Core CppTools Designer Texteditor CodePaster Help
+    Core CppEditor Designer Texteditor CodePaster Help
     DiffEditor ProjectExplorer VcsBase Debugger
     QtSupport ResourceEditor QmlJSTools QmlJSEditor
     QmakeProjectManager QmlDesigner QmlPreview
