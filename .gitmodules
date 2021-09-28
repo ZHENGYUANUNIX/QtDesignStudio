@@ -9,5 +9,5 @@
 	url = ../plugin-telemetry.git
 [submodule "qmldom_standalone"]
 	path = qmldom_standalone
-	url = ssh://codereview.qt-project.org:29418/qt/qtdeclarative
+	url = ../../qt/qtdeclarative.git
 	branch = dev
