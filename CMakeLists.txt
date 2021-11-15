@@ -21,6 +21,7 @@ set(BUILD_PLUGINS
     QmakeProjectManager QmlDesigner QmlPreview
     QmlProjectManager AssetImporterPlugin
     IsoIconBrowserPlugin StudioPlugin StudioWelcome
+    Android LanguageClient
     assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin
     CACHE STRING "Build plugins" FORCE)
 
