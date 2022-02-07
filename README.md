@@ -11,7 +11,7 @@ Initializing:
 clone repository from https://codereview.qt-project.org/admin/repos/qt-creator/tqtc-qtc-super
 ```
 git checkout --track origin/qds-3.0
-git submodule update --init --remote --recursive
+git submodule update --init --remote && git -C qtcreator submodule update --recursive
 ```
 
 Updating:
