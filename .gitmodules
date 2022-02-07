@@ -10,7 +10,3 @@
 	path = telemetry
 	url = ../plugin-telemetry.git
 	branch = 6.0
-[submodule "qmldom_standalone"]
-	path = qmldom_standalone
-	url = ../../qt/qtdeclarative.git
-	branch = dev
