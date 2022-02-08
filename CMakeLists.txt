@@ -21,7 +21,7 @@ set(BUILD_PLUGINS
     QmakeProjectManager QmlDesigner QmlPreview
     QmlProjectManager AssetImporterPlugin
     IsoIconBrowserPlugin StudioPlugin StudioWelcome
-    Android LanguageClient
+    Android LanguageClient MultiLanguage
     assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin
     CACHE STRING "Build plugins" FORCE)
 
@@ -31,7 +31,6 @@ ${CMAKE_BINARY_DIR}/cmake
 find_package(Qt6 QUIET)
 
 if (NOT Qt6_FOUND)
-    list(APPEND BUILD_PLUGINS MultiLanguage)
     list(APPEND BUILD_PLUGINS SpecGenerator)
 endif ()
 
