@@ -13,6 +13,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(QTC_MERGE_BINARY_DIR ON)
 set(BUILD_DESIGNSTUDIO ON CACHE BOOL "Build design studio" FORCE)
 set(MULTILANGUAGE_SUPPORT_SUBDIRECTORY "${CMAKE_CURRENT_LIST_DIR}/qtquickdesigner/libs/multilanguage-support")
+## Add paths to get the real QtCreator -> QtDesignStudio branding
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/qtquickdesigner/studiodata/branding")
 
 set(BUILD_PLUGINS
     Core CppEditor Designer Texteditor CodePaster Help
