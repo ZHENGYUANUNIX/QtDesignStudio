@@ -10,8 +10,12 @@ Initializing:
 -------------
 clone repository from https://codereview.qt-project.org/admin/repos/qt-creator/tqtc-qtc-super
 ```
-git checkout --track origin/qds-3.0
-git submodule update --init --remote && git -C qtcreator submodule update --recursive
+git checkout --track origin/qds-3.1
+git submodule update --init --remote --recursive
+git -C qtcreator checkout --track origin/7.0
+git -C qtquickdesigner checkout --track origin/7.0
+git -C telemetry checkout --track origin/7.0
+
 ```
 
 Updating:
