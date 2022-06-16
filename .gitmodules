@@ -2,11 +2,3 @@
 	path = qtcreator
 	url = ../qt-creator.git
 	branch = 7.0
-[submodule "qtquickdesigner"]
-	path = qtquickdesigner
-	url = ../tqtc-plugin-qtquickdesigner.git
-	branch = 7.0
-[submodule "telemetry"]
-	path = telemetry
-	url = ../plugin-telemetry.git
-	branch = 7.0
