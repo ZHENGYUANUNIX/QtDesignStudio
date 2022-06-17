@@ -13,9 +13,6 @@ clone repository from https://codereview.qt-project.org/admin/repos/qt-creator/t
 git checkout --track origin/qds-stable
 git submodule update --init --remote --recursive
 git -C qtcreator checkout --track origin/7.0
-git -C qtquickdesigner checkout --track origin/7.0
-git -C telemetry checkout --track origin/7.0
-
 ```
 
 Updating:

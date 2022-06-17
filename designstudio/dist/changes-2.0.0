@@ -1,0 +1,73 @@
+The Qt Design Studio 2.0.0 release contains bug fixes and new features.
+
+General
+   * Integrated user statistics (QDS-3140)
+   * Integrated crash reporter (QDS-3228)
+   * Implemented locking of items (QDS-2915)
+   * Implemented logical NOT in binding editor (QDS-2872)
+   * Added technical preview for Figma bridge
+   * Changed how 2D effects work (QDS-2948)
+   * Added Logic Helpers (QDS-2949)
+
+Documentation
+   * Updated Qt Design Studio Manual to version 2.0.0
+   * Added documentation for most commonly-used QML types (QDS-3229)
+   * Updated documentation about 2D effects (QDS-3230)
+   * Added documentation for Figma bridge
+
+Curve Editor
+   * Improved mouse pad support on macOS
+
+Form Editor
+   * Improved mouse pad support on macOS (QDS-2943)
+
+Property Editor
+   * Improved drag editing in Properties (QDS-2371)
+   * Added easier way to start editing component (QDS-2358)
+   * Improved template generation (QDS-3062)
+
+Qt for MCUs
+   * Fixed showing items not available for Qt for MCUs
+
+Navigator
+   * Implemented navigator preview for components, images, textures, materials and models (QDS-2750)
+   * Added option to reverse order (QDS-2773)
+   * Updated styling of navigator delegates
+
+Item Library
+  * Added component preview to item library (QDS-3005)
+
+Wizards
+   * Adjusted supported resolutions for MCU wizards
+
+Asset Importer
+   * Fixed merging of MouseAreas (QDS-1587)
+   * Fixed merging of bindings (QDS-2555)
+
+Asset Exporter
+   * Added an option to generate PSD file for each component we export (QDS-3107)
+   * Set the default DPI to 72 (QDS-2991)
+
+Qt Bridge for Adobe Photoshop
+   * Fixed multiline export (QDS-2556)
+   * Fixed child layers under group which exported to Controls (QDS-2535)
+   * Added option to export text items as image (QDS-1137)
+   * Fixed error with documents without Artboards
+   * Fixed that data update on selection change was not optimized
+   * Updated font matching algorithm
+   * Fixed layer size of Text layer import
+   * Fixed PSD generation issues:
+       * Fixed initialization errors
+       * Fixed document cleanup
+       * Line height is respected
+       * DPI settings are considered
+
+Qt Bridge for Sketch:
+   * Added option to export text items as image (QDS-1137)
+   * Fixed stale data on layer selection.
+
+QML Puppet
+   * Added support for Qt 6
+
+3D View
+   * Added support for Qt 6 based qml2puppet

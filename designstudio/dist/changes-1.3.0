@@ -1,0 +1,68 @@
+The Qt Design Studio 1.3.0 release contains bug fixes and new features.
+
+General
+   * Mapped delete actions to the Backspace key on macOS
+     (QDS-80, QDS-186, QDS-849, QDS-851)
+   * Moved Qt Design Studio specific plugins to the Qt Creator source
+     repository (QDS-660)
+   * Cleaned up the welcome mode and splash screen and moved them to the
+     Qt Creator source repository (QDS-659, QDS-799)
+
+Editing
+   * Fixed that opening a file marked it as containing unsaved changes (QDS-377)
+   * Fixed that the cursor was moved to the end of the file when the file was
+     saved in the integrated text editor (QDS-739)
+
+Documentation
+   * Updated Qt Design Studio Manual to version 1.3 (QDS-847)
+
+Curve Editor
+   * Integrated a curve editor into Qt Design Studio (QDS-546, QDS-576, QDS-577)
+
+Form Editor
+   * Fixed that there were two ways to change the z-order of an item, by no
+     longer using the z-order to move items to the front and to the back
+     (QDS-370)
+   * Fixed selection behavior
+
+Property Editor
+  * Added support for selecting multiple items simultaneously (QDS-324)
+  * Fixed color editing (QDS-599)
+  * Added saving recent colors in the color picker (QDS-746)
+  * Added a gradient picker (QDS-605)
+  * Added avanced editing of gradients (QDS-26)
+  * Added an integrated binding editor based on the editor widget (QDS-625)
+  * Replaced the binding editor with a text editor based dialog (QDS-626)
+  * Redesigned the property inspector (QDS-366, QDS-798)
+  * Replaced controls with ones based on Qt Quick Controls 2 (QDS-609, QDS-616)
+    * Spin boxes (QDS-610)
+    * Comboboxes (QDS-611)
+    * Text fields (QDS-613)
+    * Text areas (QDS-614)
+    * Check boxes (QDS-615)
+  * Made the layout more consistent (QDS-747)
+  * Made all controls reachable after expanding other controls (QDS-745)
+
+Item Library
+  * Added tooltips to components (QDS-342)
+
+Studio Components
+   * Fixed the Arc component (QDS-869)
+   * Added the Group component (QDS-651)
+
+Asset Importer
+   * Fixed that the Merge QML option was reset after each import (QDS-864)
+   * Added support for custom fonts (QDS-146, QDS-31)
+
+Qt Bridge for Sketch
+   * Added support for exporting Sketch overrides (QDS-794)
+   * Added support for exporting assets in the scalable vector graphics (SVG)
+     format
+
+Qt Bridge for Adobe Photoshop
+   * Fixed that an extra pixel was added to the width and height of an asset
+     while exporting from Adobe Photoshop (QDS-14)
+
+QML Project
+   * Added basic support for QmlFileSelector (QDS-588)
+

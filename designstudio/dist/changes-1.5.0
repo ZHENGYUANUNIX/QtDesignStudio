@@ -1,0 +1,78 @@
+The Qt Design Studio 1.5.0 release contains bug fixes and new features.
+
+General
+   * Integrated Advanced Docking Framework (QDS-1486)
+   * Improved Theming Integration (QDS-1838)
+   * Fixed hang on quit (QDS-1525)
+
+Documentation
+   * Updated Qt Design Studio Manual to version 1.5 (QDS-2056)
+
+Curve Editor
+   * Added a unify tool (QDS-568)
+   * Fixed select and drag handle not releasing previous selection (QDS-1033)
+   * Added lock tangent feature (QDS-1400)
+   * Added pinning of curves (QDS-550)
+
+Form Editor
+   * Added grouping items from context menu (QDS-1254)
+   * Added save zoom and background color (QDS-1030)
+   * Added annotation support (QDS-39)
+   * Fixed pane is not visible (QDS-797)
+   * Added locked aspect ratio scaling with shift key (QDS-829)
+
+Property Editor
+   * Added definition of custom easing curves (QDS-1537)
+   * Added inspection of component for existing states (QDS-1978)
+   * Added editing state property (QDS-1947)
+   * Added support for Column leftPadding, rightPadding, topPadding and bottomPadding (QDS-1501)
+   * Added font style support in property editor (QDS-1884)
+   * Added unique custom id (QDS-1550)
+
+3D View
+   * Added grid zooming (QDS-1566)
+   * Added shortcut keys for delete, save, and redo/undo (QDS-1266)
+   * Fixed selection after editing a 3D scene in the 3D Edit View (QDS-1529)
+   * Added widget that will host the 3D view (QDS-1616)
+   * Added support DnD on the creator view 3D widget (QDS-1621)
+   * Fixed changing object properties while recording timeline is on, no keyframe is created (QDS-1281)
+   * Fixed animate transform properties of a 3D model (QDS-1448)
+   * Fixed gizmo picking is not accurate when zooming out in orthographic edit camera (QDS-1526)
+   * Added copy/paste items using keyboard shortcuts in the 3D Edit View (QDS-1563)
+   * Embedded 3D edit view to Qt Design Studio main view (QDS-1570)
+   * Fixed 3D view onboarding text is not translatable (QDS-1993)
+   * Added direction of the light (QDS-1634)
+
+Navigator
+   * Added Error messages for failing components (QDS-1980)
+   * Fixed item deletion via context menu (QDS-165)
+   * Fixed imported 3D components (QDS-1516)
+   * Added attaching a texture to a material via the Navigator (QDS-1844)
+   * Fixed selecting an item on the Navigator (QDS-1940)
+
+Item Library
+   * Added Qt Quick Animations (QDS-1613)
+   * Added basic models to Quick 3D item library (QDS-1515)
+   * Added default new view3Ds to have SceneEnvironment (QDS-1846)
+
+Asset Importer
+   * Fixed QML Types tab of item library only has flow tags on freshly created project (QDS-2023)
+   * Fixed font weight is not imported in Qt Bridge (QDS-1859)
+   * Fixed incorrect co-ordinate values assigned for known QML types (QDS-2018)
+
+Qt Bridge for Sketch
+   * Fixed crash on cancel (QDS-1593)
+   * Fixed exports only single metadata and single png (QDS-820)
+   * Fixed incorrect positions (QDS-1732)
+   * Added unlinking Library symbols (QDS-1951)
+   * Added font weight support (QDS-791)
+   * Added support for Sketch Libraries (QDS-1303)
+   * Added overriding child component with a Symbol (QDS-1743)
+   * Fixed invalid named component after export (QDS-1860)
+
+Qt Bridge for Adobe Photoshop
+   * Fixed copyright year (QDS-2086)
+   * Fixed clip option no longer working (QDS-2090)
+   * Fixed alias doesn't seem to do anything (QDS-2091)
+   * Added QML export in different directories (QDS-1490)
+   * Fixed "Cascade Properties" can force set "Export As" to "merged" even for Texts (QDS-1664)

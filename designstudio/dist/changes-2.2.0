@@ -1,0 +1,137 @@
+The Qt Design Studio 2.2.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+2.2.0 beta1: https://bugreports.qt.io/projects/QDS/versions/19514
+2.2.0 beta2: https://bugreports.qt.io/projects/QDS/versions/19816
+2.2.0 rc1: https://bugreports.qt.io/projects/QDS/versions/19817
+2.2.0: https://bugreports.qt.io/projects/QDS/versions/19515
+
+
+General
+   * Qt Design Studio is now built with Qt 6 (QDS-4415, QDS-4196)
+   * Added Qt 6 kit (QDS-4197)
+   * Added ability to switch between Qt 5 and Qt 6 kits (QDS-4547)
+   * Using qml runtime instead of qmlscene for Qt 6 projects (QDS-639)
+   * Added QtGraphicalEffects compatibility for Qt 6 kits (QDS-4763)
+   * Added copying and pasting styles (QDS-2231)
+   * Added previously missing control styles (QDS-4750)
+   * Improved QRC files integration (QDS-4566)
+   * Fixed Report bug... button link (QDS-1272)
+   * Fixed crash on opening a qmlproject with invalid kit (QDS-4157)
+   * Removed mention of Qt Creator in telemetry info bar (QDS-4220)
+
+Qt 6 Support
+  * Added support for Qt 5 and Qt 6 in parallel (QDS-2916)
+  * Implemented single item rendering for Qt 6 (QDS-2933)
+  * Improved 2D item rendering for Qt 6 (QDS-4544)
+  * Fixed code model for Qt Quick Controls 2 with Qt 6 kits (QDS-2918)
+  * Fixed side effect of import order (QDS-2917)
+  * Fixed 2D content in 3D scene (QDS-4471)
+  * Fixed navigator visibility in Qt 6 (QDS-4932)
+  * Fixed Constans.qml in all examples (QDS-4744)
+  * Fixed warnings (QDS-4491)
+  * Fixed picking of model in 3D Editor (QDS-4853)
+
+Documentation
+   * Updated Qt Design Studio online manual to version 2.2.0
+   * Restructured manual to describe designer workflow
+   * Documented qmlproject migration from Qt 5.15 to Qt 6.2
+   * Documented properties of new Qt Quick 3D components
+   * Added content to FAQ
+   * Added instructions for using Qt Bridge for Adobe XD
+   * Added installation instructions (QDS-4441)
+   * Added introduction to animation techniques (QDS-4459)
+   * Added Animation component properties (QDS-4465)
+   * Added creation of UI Logic in Qt Quick (QDS-4499)
+   * Added qrc and rcc resource generation (QDS-458)
+   * Updated UI creation tutorial (QDS-4900)
+   * Updated Concepts and Terms (QDS-3475)
+
+Property Editor
+   * Reworked Property editor (QDS-4168)
+       * Complete Property editor redesign (QDS-4296)
+       * Removed advanced tab (QDS-3205)
+       * Reorganised some items properties (QDS-3206)
+       * New layouts for geometry panel (QDS-3207)
+       * Reworked Color Editor (QDS-4299)
+   * Added eye dropper tool for color picking (QDS-4582)
+   * Added orientation property to gradient controls (QDS-4554)
+   * Fixed corner radius clamping (QDS-4797)
+   * Fixed Tr button for text field (QDS-3839)
+   * Fixed minimum width for property editor (QDS-4555)
+   * Fixed missing specifics for QtQuick.Layouts (QDS-4648)
+   * Fixed crash on rapidly selecting items (QDS-4728)
+   * Fixed components default names in type changing dialog (QDS-3313)
+   * Fixed spin box ranges for Range Mapper Logic Helper component (QDS-4963)
+   * Fixed Distribute Spacing buttons tooltips (QDS-4139)
+
+Form Editor
+   * Fixed color dialog removing property (QDS-4826)
+   * Fixed ListView visibility in Form Editor (QDS-3044)
+
+Navigator
+   * Fixed issue with removing of an item with layer.enabled (QDS-3802)
+
+Dock Widget Framework
+   * Fixed floating dock widget behavior on macOS (QDS-3144)
+
+Qt Bridge
+   * Fixed import path for Qt for MCUs configuration (QDS-4078)
+
+Qt Bridge for Adobe XD
+   * Added Technical Preview for Adobe XD Bridge
+
+Assets Library
+   * Fixed context menu (QDS-4628)
+   * Fixed scrolling after view mode switch (QDS-3103)
+
+Component Library
+   * Fixed empty Defaut Components section (QDS-3806)
+   * Fixed removal of modules that are still in use (QDS-4985)
+
+States Editor
+   * Fixed states editor model reset (QDS-4336)
+   * Fixed states list button icon alignment (QDS-5054)
+
+Qt for MCUs
+   * Updated property sheets for Design View to match Qt for MCUs 1.8 and 1.9
+   * Added preconfigured qmlmodule and Constants singleton support (QDS-2985)
+   * Added QtQuick.Controls MCU style (QDS-4954)
+   * Fixed missing properties in previous property sheets (QDS-4712)
+   * Fixed property editor for QtQuick.Controls components (QDS-4052)
+   * Fixed toolbar layout buttons in Qt for MCUs mode (QDS-4641)
+   * Fixed issues with QtQuickUltralite Extras and Layers (QDS-4756)
+   * Fixed Layers.ImageLayer properties (QDS-4710)
+   * Fixed Layers.Screen behavior in Design View (QDS-3774)
+
+Annotations
+   * Fixed crash for files without projects (QDS-4810)
+   * Fixed annotation removal on view switch (QDS-4636)
+   * Fixed annotation title removal on submit (QDS-4885)
+
+3D Editor
+   * Added support for fitting multiselection to view (QDS-4608)
+   * Added moving, rotating and scaling multiselection in 3D Editor (QDS-4313)
+   * Blocked changing Euler Rotation for 3D components that have rotation (QDS-4335)
+   * Fixed qmlpuppet crash when editing 3D components (QDS-4334)
+   * Fixed flashing when adding or removing modules (QDS-4586)
+
+Qt Quick 3D Support
+   * Added property editor sheets for new Qt Quick 3D components
+   * Added particle system for 3D Editor (QDS-4618, QDS-4622)
+   * Added information about materials for imported 3D models (QDS-4691)
+   * Added support for vector 3D (QDS-4876)
+   * Added Instantiated Rendering Tooling (QDS-4172)
+   * Added Mesh Morphing Animation Tooling (QDS-4169)
+   * Added Skeletal Animation Tooling (QDS-4171)
+   * Fixed copy-paste not working properly on multiselected 3D components (QDS-4534)
+
+Timeline
+   * Fixed flickering for specific values (QDS-3216)
+   * Fixed status bar text appearance after timeline deletion (QDS-2346)
+
+Design Studio Components
+   * Updated property editor sheets
+   * Fixed Arc component appearance (QDS-4359)
+

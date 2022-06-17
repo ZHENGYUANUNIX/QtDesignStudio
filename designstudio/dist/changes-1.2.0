@@ -1,0 +1,50 @@
+The Qt Design Studio 1.2 release contains bug fixes and new features.
+
+General
+   * Qt Design Studio now uses a .qtds file instead of the .user file of Qt Creator
+
+Sketch Bridge
+   * Added Sketch Bridge to Qt Design Studio
+
+Qt 3D Studio support
+   * Moved to Qt 3D Runtime 2.4 snapshot
+
+Editing
+   * Fixed selection synchronization (QDS-537)
+   * Fixed jumping cursors in integrated text editor
+
+Documentation
+   * Added a set of entry-level tutorials for performing basic tasks (QDS-477)
+   * Added documentation for JavaScript functions in .ui.qml files (QDS-379)
+   * Added documentation for Qt Quick Studio Components and Effects
+
+Timeline
+   * Fixed 'None' in timeline dialog that triggered weird error message (QDS-664)
+   * Fixed that editing keyframes did not refresh the timeline (QDS-231)
+   * Fixed that a malformed project crashed Qt Design Studio (QDS-778)
+   * Added setting easing curve back to linear (QDS-454)
+   * Fixed animation settings that were missing after adding a new timeline (QDS-434)
+
+Form Editor
+   * Fixed blocking ListModel (QDS-115)
+
+Property Editor
+  * Changed color of binding indicators to blue (QDS-540)
+
+Item Library
+  * Fixed column layout and row layout icons (QDS-538)
+  * Fixed issue in resource browser (QDS-227)
+  * Fixed using last location when importing resources (QDS-499)
+
+Components
+   * Added support for complex gradients
+   * Fixed ArcItem for full arc (circle)
+
+Photoshop Bridge
+   * Added support for visibility (QDS-503)
+
+QML Project
+   * Added basic support for QmlFileSelector
+
+Community Edition
+   * Added community edition

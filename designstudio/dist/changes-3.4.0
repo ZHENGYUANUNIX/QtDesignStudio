@@ -1,0 +1,35 @@
+The Qt Design Studio 3.4.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+3.4.0: https://bugreports.qt.io/projects/QDS/versions/20141
+
+General
+  * Added missing crashpad in macOS installation (QDS-5958)
+  * Added download of data for tutorials and examples from qt.io (QDS-6886)
+  * Added context menu for setting ui.qml and main.qml file in project editor (QDS-6882)
+  * Fixed hanging application when adding a new file not in the project path (QDS-6870)
+  * Fixed hanging application closing project while editing component (QDS-6841)
+  * Fixed the 2d preview of the form editor in a pure 3d scene (QDS-6896)
+  * Updated focus behavior of controls in property editor (QDS-6028)
+
+Curve Editor
+  * Fixed state related bug in curve editor (QDS-6872)
+  * Fixed invalid animation ranges (QDS-6543)
+  * Fixed toolbar (QDS-6542)
+  * Added informative text if document has no timeline (QDS-6545)
+
+Examples
+  * Added Robot Arm example (QDS-6899)
+  * Added simple Qt Quick 3D example (QDS-6716)
+  * Added Figma Variant example (QDS-6833)
+  * Updated particle effect example (QDS-6712)
+
+Documentation
+  * Added Android live preview to public documentation (QDS-5729)
+
+Qt Bridge for Figma
+  * Fixed asset export error crash handling (QDS-6916)
+  * Fixed warnings for variant state name duplicates (QDS-6819)
+  * Added anchors support (QDS-6890)
+

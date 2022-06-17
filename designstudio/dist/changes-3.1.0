@@ -1,0 +1,71 @@
+The Qt Design Studio 3.1.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+3.1.0: https://bugreports.qt.io/projects/QDS/versions/20139
+
+General
+  * Hid build, debug and analyze menu by default (QDS-6228)
+  * Improved performance when editing a qml file with a large number of objects (QDS-6110)
+  * Stopped to open output pane automatically (QDS-6084)
+  * Added more workspaces and a simple workspace for first-time users (QDS-6140)
+  * Integrated download and extraction into the welcome page and keep examples after download (QDS-6174)
+  * Fixed unsaved changes in states (QDS-6185)
+  * Fixed minimum size of the welcome page as it was too big on MacBook Pro 13 inch display (QDS-6163)
+  * Implemented proper preview for pure 3D scenes (QDS-5785)
+  * Added cache when re-opening document (QDS-6121)
+
+Text Editor
+  * Improved finding node for cursor position (QDS-6110)
+  * Added search to the integrated text editor (QDS-6187)
+
+Documentation
+  * Updated particle system documentation (QDS-6190)
+  * Updated welcome screen documentation (QDS-6214)
+  * Updated create project documentation (QDS-5967)
+
+Property Editor
+  * Fixed error when rewriting document when changing solid color to linear in states (QDS-6184)
+  * Fixed issue when a property was called className (QDS-6309)
+
+Form Editor
+  * Added preview in the form editor for files with a 3D Node as root (QDS-6221)
+  * Fixed that changing camera on View3D doesn't change the view in form editor (QDS-6081)
+
+Navigator
+  * Fixed on-drag bindings of created nodes to properties (QDS-6198)
+  * Fixed performance bottleneck in the navigator (QDS-6110)
+
+Qt Bridge Importer
+  * Added the usage of translation functions for QML Text item (QDS-6144)
+
+Qt Bridge for Adobe XD
+  * Fixed Export TypeError pluginData (QDS-5999)
+
+Qt Bridge for Figma
+  * Fixed alias plugin option for instances (QDS-6244)
+  * Fixed export of rotation property for instances (QDS-4857)
+  * Fixed plugin panel inconsistencies (QDS-5442, QDS-5456)
+  * Fixed export of opacity property (QDS-4674)
+  * Fixed export of Text items with strokes. (QDS-5117)
+
+Wizards
+  * Added comment to the beginning of .ui.qml files that explains that .ui.qml files are declarative (QDS-5964)
+
+Assets Library
+  * Split Library into components and assets (QDS-6151)
+  * Fixed that assets search is cleared when adding assets (QDS-6195)
+  * Implemented adding and removing asset folders (QDS-5795)
+
+Component Library
+  * Split Library into components and assets (QDS-6151)
+  * Added context menu to open components from the library (QDS-5786)
+  * Added dependencies for imports (QDS-6199)
+  * Fixed loading of .metainfo for versioned folders (QDS-6078)
+
+3D Editor
+  * Fixed objects loaded with QtQuick3D.AssetUtils.RuntimeLoader can't be properly selected (QDS-6053)
+  * Added a way to toggle the visibility of the icon gizmos (QDS-5954)
+  * Added option to turn off the selection highlight (QDS-5932)
+  * Added buttons to align camera to editor view and vice versa (QDS-4482)
+  * Removed child object selection boxes (QDS3656)

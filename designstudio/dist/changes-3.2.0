@@ -1,0 +1,41 @@
+The Qt Design Studio 3.2.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+3.2.0: https://bugreports.qt.io/projects/QDS/versions/20140
+
+General
+  * Added universal (arm/x86_64) macOS builds (QDS-6226)
+  * Updated QtForMCUs 2.1 meta-data (QDS-6535)
+  * Fixed state view preview images (QDS-6390)
+  * Fixed that plus icon in 'Add a new state' tile is not centered correctly (QDS-6529)
+  * Fixed that navigator preview of a 3D Model node doesn't render the model (QDS-6204)
+  * Fixed that navigating between components can pile up breadcrumbs (QDS-6307)
+  * Added sprite, spriteSequence and baseSate as invalid ids (QDS-6307)
+  * Added dropping external assets to a specific folder (QDS-6311)
+  * Renamed "CurveEditor" to "Curve Editor" (QDS-5852)
+
+3D Editor
+  * Fixed rendering of sprites in sprite sequence (QDS-6178)
+  * Fixed visualization of particleShape (QDS-6189)
+  * Fixed duplicate shortcut keys in 3D Editor (QDS-6300)
+  * Fixed attractor shape visualization (QDS-6426)
+  * Fixed showing asset import dialog when dragging a 3D model (QDS-6433)
+  * Fixed that component preview gets stuck open (QDS-6481)
+  * Fixed font preview tooltip image in asset library (QDS-6486)
+  * Fixed that ParticleShape3D initially doesn't work when added to the scene (QDS-6473)
+  * Added error message on import log for failed 3D import (QDS-6402)
+  * Added visualization gizmo for ParticleEmitter3D (QDS-6189)
+
+Documentation
+  * Added documentation that debug, analyze, and build views are hidden by default (QDS-6372)
+  * Fixed broken link in particles tutorial docs (QDS-6387)
+
+Qt Bridge for Figma
+  * Added export of states array of the component from Figma (QDS-5978)
+  * Fixed font-weight and wrap mode property syntax (QDS-6490)
+  * Fixed that UUIDs are not sticky in Figma plugin output (QDS-6338)
+  * Fixed Figma PNG export (QDS-5460)
+  * Fixed that vectors with gradient stroke were not converted to the asset (QDS-4673)
+  * Fixed that when exporting from Figma it will round off floating point positions instead of preserving them (QDS-6128)
+

@@ -1,0 +1,151 @@
+The Qt Design Studio 2.3.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+2.3.0 beta1: https://bugreports.qt.io/projects/QDS/versions/20132
+2.3.0: https://bugreports.qt.io/projects/QDS/versions/19710
+
+General
+  * Fixed crash when closing document in Design mode (QDS-5606)
+  * Fixed that position and layout menus were enabled even if there was no content to manage (QDS-5483)
+  * Fixed undo/redo/manual edits while editing subcomponent (QDS-5392)
+  * Fixed ComponentTextModifier offsets for whitespace change (QDS-5362)
+  * Fixed Reset ComponentTextModifier when changing to doc model
+  * Fixed property binding after dragging from component Library (QDS-5357)
+  * Fixed blocking of modifying imports when editing in-file subcomponent (QDS-5353)
+  * Improved icons for layouts and positioners (QDS-4287)
+  * Improved error message on trying to edit empty component (QDS-5308)
+  * Added support for Add QtMultimedia (QDS-5147)
+  * Added inserting of SVG snippets (QDS-5259)
+  * Fixed copying of main document model metainfo to inFileComponentModel (QDS-5352)
+  * Added default template to Component item in Library (QDS-5308)
+  * Fixed adding imports to subcomponent manager whenever they change (QDS-5345)
+  * Fixed adjusting ComponentTextModifier offsets on doc text change (QDS-5305)
+  * Fixed using AuxiliaryData as cache for NodeHints (QDS-5277)
+  * Fixed removing default properties removed from model also from QML (QDS-5304)
+  * Fixed resetting puppet on repeater model change when necessary (QDS-5235)
+  * Fixed recognizing subfolders as modules at any depth (QDS-4787)
+  * Fixed handling implicit components properly in Component view (QDS-5237)
+  * Fixed casting of <cpp>.bool (QDS-5274)
+  * Fixed notifying other views of nodeSource triggered puppet reset (QDS-5222)
+  * Fixed implicit component clearing logic (QDS-5223)
+  * Fixed issues with Components and Repeaters (QDS-5197)
+  * Fixed disabling Timeline view and Curve Editor view when widget is invisible (QDS-5159)
+  * Fixed not marking file as changed for "formeditorColor" (QDS-4044)
+  * Fixed not creating pixmap at component completion (QDS-5271)
+  * Fixed updating repeater parent when repeater properties change (QDS-5233)
+  * Fixed allowing the usage of QtQuick.Templates (QDS-5681)
+  * Implemented new Multi-Language View (QDS-4178)
+
+Qt 6 Support
+  * Fixed injecting QtQuick.Controls into possible imports if necessary (QDS-5182)
+  * Added action to generate CMake files for QML projects (QDS-5140)
+  * Fixed supporting transparent border for effects (QDS-3576)
+  * Implemented rendering effects on document level
+  * Fixed using basic as style for Qt 6
+
+Particle Editor
+  * Added a way to edit and view particles visually (QDS-4623)
+  * Fixed handling particle system animation when selecting child object (QDS-5562)
+  * Added particle demo (QDS-5579)
+
+Examples
+  * Used new Project Structure for ClusterTutorial (QDS-5625)
+  * Used new Project Structure for CoffeeMachine (QDS-5625)
+  * Used new Project Structure for ProgressBar (QDS-5625)
+  * Used new Project Structure for EBikeDesign (QDS-5625)
+  * Used new Project Structure for SideMenu (QDS-5625)
+  * Used new Project Structure for WebinarDemo (QDS-5625)
+  * Used new Project Structure for Virtual Keyboard (QDS-5668)
+
+Wizards
+  * Implemented the New Project creation wizard for QDS (QDS-4490)
+  * Added tweaks for virtual keyboard
+  * Refactored project wizards to use new Project Structure supporting CMake (QDS-5344)
+
+Documentation
+  * Split Examples and Tutorials to own separate pages (QDS-5495)
+  * Improved All Topics link visability (QDS-5603)
+  * Added description for dragging external assets (QDS-5244)
+
+Property Editor
+  * Fixed Binding Editor (QDS-2819, QDS-4878)
+  * Fixed Spin Box dragging (QDS-3081, QDS-4798)
+  * Fixed and rearranged Character section
+  * Fixed allowing invalid property value for QVariant type properties (QDS-5304)
+  * Fixed ColorEditor opening position (QDS-5076)
+  * Fixed binding loop issue in URL chooser (QDS-4886)
+  * Added Radio Button to Studio Controls
+
+Live Preview
+  *  Made Live Preview work with Android Virtual Device (QDS-5383)
+
+Form Editor
+  * Added FormEditor zoom with Ctrl+mouse move (QDS-3166)
+  * Fixed retaining zoom factor when showing after hiding (QDS-5337)
+  * Fixed hiding items with non-2D Item parents in Form Editor (QDS-5356)
+  * Made Form Editor view react to node source changes properly (QDS-5230)
+
+Navigator
+  * Fixed node expand state caching for subcomponent edit case (QDS-5557)
+  * Added needed types to post-dnd bind ignored types list (QDS-5543)
+
+Qt Bridge Importer
+  * Fixed missing import logs (QDS-5430)
+  * Fixed invalid characters in QML id (QDS-4914)
+  * Fixed sanitizing the type UUID (QDS-4114)
+
+Qt Bridge for Adobe XD
+  * Added Adobe XD support (QDS-1105)
+  * Fixed that the 'Export As' combo stops working sometimes in the plugin (QDS-5288)
+  * Fixed Export Component relationship with instances (QDS-5257)
+  * Added component support for Adobe XD (QDS-5256)
+  * Added Render Text as an image (QDS-5162)
+  * Fixed XD Bridge - PNGs exporting blank (QDS-5551)
+
+Qt Bridge for Figma
+  * Fixed the export archive format of Figma plugin (QDS-5605)
+  * Fixed asset name conflict for layers with same name (QDS-5525)
+  * Fixed rotated items exported at the wrong coordinates (QDS-5503)
+  * Fixed merged layers clipped when exported from Figma (QDS-5490)
+  * Fixed wrong stacking of Figma layers after import to QDS (QDS-5465)
+  * Added support for exporting a single frame/component from Figma (QDS-5464)
+  * Fixed unnecessary items in the QML hierarchy (QDS-5247)
+  * Fixed layer ordering is not respected on the import (QDS-5246)
+  * Fixed Figma imported text wrapping when it shouldn't (QDS-5227)
+
+Assets Library
+  * Added support for bridge files (QDS-5278)
+  * Added dropping of external assets (QDS-5045)
+  * Fixed error reporting when cancelling resouces dialog (QDS-5265)
+  * Added placeholder controls for when the assets view is empty
+
+Component Library
+  * Fixed checking for file type imports when adding unimported items (QDS-5545)
+  * Added item library icons for Component, Loader, and Repeater
+  * Added support for Component type (QDS-5149)
+  * Implemented a horizontal layout for Component Library (QDS-4764)
+  * Fixed Close component library's context menus when layout change (QDS-5351)
+
+States Editor
+  * Fixed states list button icon alignment (QDS-5054)
+  * Fixed refreshing items if state is changed (QDS-5462)
+
+Qt for MCUs
+  * Updated CMakeLists for QUL 2.0 (QDS-5676)
+  * Fixed qds-mcu metainfo rules (QDS-4712)
+  * Added Thermo demo (QDS-5579)
+
+3D Editor
+  * Fixed 3D edit view rendering logic (QDS-5467)
+
+Qt Quick 3D Support
+  * Fixed puppet crash with nested Repeater3Ds (QDS-5651)
+  * Fixed destroying old view before each Navigator preview generation (QDS-5600)
+  * Fixed Navigator preview of imported 3D components (QDS-5600)
+  * Removed dummy View3D workaround
+
+Design Studio Components
+   * Added Polygon and Ellipse (QDS-5143)
+   * Fixed Arc component appearance (QDS-5142)
+

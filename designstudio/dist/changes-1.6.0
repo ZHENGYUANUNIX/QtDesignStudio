@@ -1,0 +1,114 @@
+The Qt Design Studio 1.6.0 release contains bug fixes and new features.
+
+General
+   * Increased precision for float properties (QDS-2190)
+   * Added Transition Editor
+   * Added ListModel editor (QDS-2294)
+   * Added remove group action (QDS-2228)
+   * Added annotations for states (QDS-2312)
+   * Blacklisted some quick3d property names as ids (QDS-2636)
+
+Advanced Docking System
+   * Activated new ADS feature: focus highlight
+   * Removed resources.qrc and related *.svg files
+   * Cleaned up new and existing source
+
+Documentation
+   * Updated Qt Design Studio Manual to version 1.6.0
+   * Added documentation for FlowView
+   * Added documentation for Transition Editor
+   * Added documentation for migrating projects from Qt 3D Studio
+   * Added documentation for Qt Quick 3D effects, shader utilities,
+     and materials
+
+Curve Editor
+   * Implemented proper y-axis labeling
+
+Form Editor
+   * Increased default for canvas size
+
+Connection View
+   * Changed styling (QDS-2201)
+   * Implemented support for aliases in Connection View (QDS-2411)
+   * Added singletons to Binding Editor (QDS-2468)
+   * Added singleton support to BindingModel (QDS-2477)
+   * Added singleton support to Connections
+
+Property Editor
+   * Added Change Type Name dialog (QDS-1946)
+   * Removed Qt Quick Controls 1 usage (QDS-2454, QDS-2455, QDS-2456)
+   * Added rich text editor widget as dialog for multiline text input (QDS-2229)
+   * Added support for colors defined with vector3d property (QDS-2114)
+   * Added support for vector2d type qml properties (QDS-2189)
+   * Keep hasActiveTimeline QML context property up to date (QDS-2139)
+   * Fixed spinbox empty value handling (QDS-1539)
+   * Fixed highlighting EditableListView items when not focused (QDS-2416)
+   * Added colors for 3d axis property labels (QDS-2404)
+   * Added support for plain expressions to be set with LineEdit (QDS-2603)
+
+Qt for MCUs
+   * Fixed showing items not available for Qt for MCUs
+   * Disabled properties that are not available in Qt Quick Ultralight
+   * Disabled FlowTags for Qt for MCUs
+   * Added Timeline for Qt for MCUs, but disabled FlowView (QDS-2512)
+   * Added CMakeLists to Qt for MCU wizard template (QDS-2642)
+
+Navigator
+   * Implemented insertion of dragged material into parent model's materials
+     list
+   * Made image dragging create Texture on all materials (QDS-2657)
+   * Added support for dragging images to TextureInput types (QDS-2657)
+   * Added target property dialog when dragging image to material (QDS-2326)
+   * Persist navigator expand state between model changes (QDS-2222)
+   * Added inserting dragged effect into effects list of environment (QDS-2200)
+   * Added inserting dragged material into parent model's materials (QDS-1651)
+   * Added support for dragging shaders and commands to passes (QDS-2657)
+
+Item Library
+   * Added support for .hdr images (QDS-2128)
+   * Implemented generating QML ID from image file name (QDS-2328)
+   * Fixed item library sections expand state persistence (QDS-2142)
+   * Keep possible imports list up-to-date (QDS-1592)
+   * Fixed possible imports list after import removal (QDS-2199)
+   * Fixed imports from other projects being show in import list (QDS-1495)
+
+Wizards
+   * Added option for application import
+   * Fixed ArcItem stroke color
+   * Simplified button templates
+
+Asset Importer
+   * Updated the PSD assets name deduction (QDS-1492)
+   * Fixed alias property not being parsed (QDS-1249)
+
+Qt Bridge for Sketch
+   * Fixed MSImmutableLayerAncestry failure
+   * Enabled users to reset auto-generated QML IDs
+
+Qt Bridge for Adobe Photoshop
+   * Added PSD generation from JSON metadata
+   * Fixed export failure with new documents
+   * Implemented opening export directory from Export panel
+   * Migrated CEP to version 9.0
+   * Enabled users to reset auto-generated QML IDs
+   * Implemented asset name and QML ID cleanup. No layer IDs in the QML ID
+   * Added support for text justification
+
+QML Puppet
+   * Added a fallback to primitive create if component create fails (QDS-2697)
+
+3D View
+   * Updated light icons and added separate gizmos for each type (QDS-2037)
+   * Added drag handles to light gizmos to adjust various properties
+     (QDS-2038, QDS-2039, QDS-2040, QDS-2041)
+   * Fixed light icon positioning after puppet reload (QDS-2082)
+   * Fixed drag-adjusting values not ending up with correct value (QDS-2081)
+   * Fixed hover hightlight of 3D edit icon gizmos (QDS-2187)
+   * Added the scene id label into 3D edit view (QDS-2239)
+   * Restore the previously active 3D scene on scene creation (QDS-2239)
+   * Improved usage of QML items as quick3d textures (QDS-2290)
+   * Fixed 3D Editor displaying non-visible items (QDS-2378)
+   * Turned the 3D edit light on initially for lightless scenes (QDS-2316)
+   * Added starting free drag on initial selection press (QDS-2376)
+   * Fixed pivot point scaling (QDS-2570)
+   * Fixed group selection for 3D scenes that have Models as root (QDS-2467)

@@ -1,0 +1,40 @@
+The Qt Design Studio 3.3.0 release contains bug fixes and new features.
+
+The most important changes are listed in this document.
+For more complete lists of changes, see release reports for Qt Design Studio
+3.3.0: https://bugreports.qt.io/projects/QDS/versions/20141
+
+General
+  * Added .qmlrc file to QRC/RCC export (QDS-6394)
+  * Added new revamped splash screen (QDS-6615)
+  * Fixed hanging QDS when signal handler was added on macOS (QDS-6547)
+  * Added trademark notice (QDS-6787)
+  * Added Qt 6 shadertools support (QDS-6472)
+  * Added shader tool command line options to .qmlproject file (QDS-6590)
+  * Fixed that recent projects snapshot images have poor quality (QDS-6553)
+  * Hid advanced settings from the 3D importer by default (QDS-6574)
+  * Added auto close to the 3D importer after a successful import (QDS-6573)
+  * Fixed FlowView for Qt 6 (QDS-6822)
+  * Fixed that HDR images look corrupted in asset view thumbnail (QDS-6608)
+  * Fixed crash when importing Sketch and Photoshop bridge assets (QDS-6721)
+  * Fixed shortcut keys doesnt work in the transition editor (QDS-6539)
+  * Changed font loading in project templates to fix rendering issues (QDS-3286)
+  * Renamed "Generate QRC Resource File" to "Generate Deployable Package"
+
+Navigator
+  * Added filter (QDS-6063)
+
+Qt for MCU
+  * Fixed washing machine example (QDS-6817)
+  * Fixed compilation issue (QDS-6599)
+
+Documentation
+  * Added info about particle templates and effects (QDS-6422)
+  * Added documentation for variant support in Figma (QDS-6654)
+  * Added documentation for Android live preview (QDS-5729)
+  * Added fire particle tutorial (QDS-6459)
+
+Qt Bridge for Figma
+  * Fixed uncaught exception when exporting (QDS-6771)
+  * Added support for variants (QDS-5315)
+  * Fixed misplacing of groups with invisible items (QDS-6109)

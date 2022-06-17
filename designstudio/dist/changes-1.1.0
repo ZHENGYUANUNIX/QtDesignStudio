@@ -1,0 +1,53 @@
+The Qt Design Studio 1.1 release contains bug fixes and new features.
+
+
+Editing
+   * Added support for more JavaScript functions (QDS-355)
+   * Fixed skipping certain auxiliary data names when saving
+
+Documentation
+   * Described converting Studio projects to Applications
+   * Added Progress Bar example docs
+   * Added docs for the Side Menu example
+   * Added docs for Webinar Demo example
+   * Added docs for the Cluster Tutorial example
+   * Added E-Bike demo to welcome page
+
+Timeline
+   * Fixed local record button
+   * Fixed in-track property editor when changing property value (QDS-281)
+   * Prevented timeline from claiming too much space (QDS-287)
+   * Added custom colors to the timeline bar items
+   * Fixed irritating error messages (QDS-307)
+   * Fixed clamping keyframe positions to the animation range after dragging
+   * Fixed resetting the status bar when changing the QML file
+   * Fixed eliding long ids in the timeline (QDS-289)
+   * Fixed status bar update (QDS-302)
+
+Property Editor
+  * Fixed invalid access to network paths (QTCREATORBUG-21372)
+
+Item Library
+  * Added support for enums in .metainfo files
+  * Fixed use Image.PreserveAspectFit by default for Image
+  * Added support for enums in .metainfo files
+  * Fixed use Image.PreserveAspectFit by default for resources
+
+Form Editor
+   * Fixed visibility of selection rectangle while moving
+
+Components
+   * Added support for negative length of zoom blur (QDS-314)
+   * Added support for dash pattern (QDS-315)
+   * Added cap style to components
+
+Photoshop Bride
+   * Added QML merging
+
+Platform Specific
+
+macOS
+   * Added support for dark theme on macOS Mojave
+
+Linux
+   * Added Linux package

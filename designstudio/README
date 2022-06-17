@@ -1,0 +1,19 @@
+This repository contains the commercial differentiator
+Qt Quick Designer. This is a commercial plugin for
+Qt Creator.
+
+To get the history of Qt Quick Designer from Qt Creator you have to:
+
+(1) Build Qt Creator  https://wiki.qt.io/Building_Qt_Creator_from_Git
+(2) You have to define the following environment variables: QTC_SOURCE and QTC_BUILD - They should point to your Qt Creator checkout/build.
+
+(3) Define QTC_BUILD_QDS to true to build design studio specific plugins
+
+(4) To build type: qmake -r && make in the tqtc-plugin-qtquickdesigner directory
+
+(5)  The welcomepage and splash screen have a dependency on on the timeline module (https://codereview.qt-project.org/#/admin/projects/qt/qtquicktimeline).
+   If the timeline is not available you will get a runtime error. Therefore you should install the qtquicktimeline in the qt you use (qmake -r && make install)
+
+(6) Run Qt Creator with -settingspath settings -installsettingspath /path/to/tqtc-plugin-qtquickdesigner/studiodata/qmldesigner
+
+
