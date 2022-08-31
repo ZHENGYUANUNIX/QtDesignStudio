@@ -8,7 +8,7 @@ Prerequisites:
 
 Initializing:
 -------------
-clone repository from https://codereview.qt-project.org/admin/repos/qt-creator/tqtc-qtc-super
+clone repository from https://git.qt.io/public-demos/qt-design-studio/-/tree/qds-stable
 ```
 git checkout --track origin/qds-stable
 git submodule update --init --remote --recursive
