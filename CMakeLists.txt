@@ -21,8 +21,8 @@ set(BUILD_PLUGINS
     QtSupport ResourceEditor QmlJSTools QmlJSEditor
     QmakeProjectManager QmlDesigner QmlPreview
     QmlProjectManager AssetImporterPlugin
-    IsoIconBrowserPlugin StudioPlugin StudioWelcome
-    Android LanguageClient MultiLanguage
+    StudioPlugin StudioWelcome
+    Android LanguageClient
     assetexporterplugin componentsplugin qmlpreviewplugin qtquickplugin ExamplePlugin
     CACHE STRING "Build plugins" FORCE)
 
