@@ -12,7 +12,7 @@ clone repository from https://git.qt.io/public-demos/qt-design-studio/-/tree/qds
 ```
 git checkout --track origin/qds-stable
 git submodule update --init --remote --recursive
-git -C qtcreator checkout --track origin/7.0
+git -C qtcreator checkout --track origin/qds/dev
 ```
 
 Updating:
