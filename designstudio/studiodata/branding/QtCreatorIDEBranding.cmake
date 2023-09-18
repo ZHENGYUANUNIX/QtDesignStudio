@@ -1,7 +1,7 @@
-set(IDE_VERSION "3.6.0")                            # The IDE version.
-set(IDE_VERSION_COMPAT "3.6.0")                     # The IDE Compatibility version.
-set(IDE_VERSION_DISPLAY "3.6.0")                    # The IDE display version.
-set(IDE_COPYRIGHT_YEAR "2022")                        # The IDE current copyright year.
+set(IDE_VERSION "4.3.0")                            # The IDE version.
+set(IDE_VERSION_COMPAT "4.3.0")                     # The IDE Compatibility version.
+set(IDE_VERSION_DISPLAY "4.3.0")                    # The IDE display version.
+set(IDE_COPYRIGHT_YEAR "2023")                        # The IDE current copyright year.
 
 set(IDE_SETTINGSVARIANT "QtProject")                  # The IDE settings variation.
 set(IDE_COPY_SETTINGSVARIANT "Nokia")                 # The IDE settings to initially import.
